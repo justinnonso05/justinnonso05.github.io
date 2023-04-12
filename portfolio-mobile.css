@@ -52,7 +52,7 @@
     background: rgba(0,8,19,0.987);
     text-align: center;
     transition: .4s;
-    padding-top: 23%;
+    padding-top: 25%;
     left: -100%;
   }
   #menu.active {
@@ -63,8 +63,8 @@
   div.menu ul li {
     list-style: none;
     color: white;
-    font-size: 23px;
-    padding-top: 36px;
+    font-size: 19px;
+    padding-top: 41px;
   }
   div.menu ul li a {
     text-decoration: none;
@@ -77,6 +77,11 @@
     margin-right: 6%;
     font-family: cambria;
   }
+  p.intro {
+    margin-bottom: 3%;
+    line-height: 2.5em;
+  }
+  
   p.intro1 {
     line-height: 1.8em;
     margin-bottom: 5px;
