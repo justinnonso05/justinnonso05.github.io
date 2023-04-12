@@ -11,7 +11,7 @@
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="#about">About Me</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#contact">Contact</a></li>
       <li><a href="#">Support Me</a></li>
       <li><a href="#">Feedback</a></li>
     </ul>
@@ -46,8 +46,19 @@
       <p class="about" id="about">
         I'm a software developer and computer science student with a passion for creating innovative solutions that solve real-world problems. I'm fascinated by the ever-evolving landscape of technology and enjoy staying up-to-date with the latest trends and developments in the field. As an aspiring developer, I'm constantly exploring new programming languages and tools to improve my skills and build robust and scalable applications. My experience in software development has taught me the value of teamwork, communication, and attention to detail, which I believe are essential to delivering successful projects.
       </p>
-      <button class="projects">Explore my projects <i class="fa fa-arrow-right" id="projects"></i></button>
+      <button class="projects"><a href="projects.html" target="_blank">Explore my projects</a> <i class="fa fa-arrow-right" id="projects"></i></button>
     </div>
+    <div class="contact" id="contact">
+      <h2 class="contact" id="contact">Contact Me</h2>
+      <p>Contact me through email by leaving a message through the form below.</p>
+      <form class="contact">
+        <input class="name" type="text" placeholder="Name">
+        <input class="email" type="email" placeholder="Email">
+        <textarea class="message" placeholder="Your message"></textarea>
+        <button class="submit" onsubmit="submit()">Submit</button><br>Or<br>Contact me on WhatsApp <a target="_blank" href="https://wa.me/+2349034049657">Here</a>
+      </form>
+    </div>
+    <div class="footer">Made and Designed by Justin Chinonso</div>
  </body>
   <script src="portfolio.js"></script>
 </html>
