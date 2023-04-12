@@ -51,14 +51,15 @@
     <div class="contact" id="contact">
       <h2 class="contact" id="contact">Contact Me</h2>
       <p>Contact me through email by leaving a message through the form below.</p>
-      <form class="contact">
-        <input class="name" type="text" placeholder="Name">
-        <input class="email" type="email" placeholder="Email">
-        <textarea class="message" placeholder="Your message"></textarea>
-        <button class="submit" onsubmit="submit()">Submit</button><br>Or<br>Contact me on WhatsApp <a target="_blank" href="https://wa.me/+2349034049657">Here</a>
+      <form class="contact" method="post" action="send-email.php">
+        <input class="name" id="name" type="text" placeholder="Name">
+        <input class="email" id="email" type="email" placeholder="Email">
+        <textarea class="message" id="message" placeholder="Your message"></textarea>
+        <button class="submit" type="submit">Submit</button><br>Or<br>Contact me on WhatsApp <a target="_blank" href="https://wa.me/+2349034049657">Here</a>
       </form>
     </div>
     <div class="footer">Made and Designed by Justin Chinonso</div>
  </body>
   <script src="portfolio.js"></script>
 </html>
+

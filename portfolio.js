@@ -16,4 +16,32 @@ links.forEach(link => {
     //bars.classList.add('show')
   });
 });
+function validateForm() {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  if (name === "" || email === "" || message === "") {
+    alert("Please fill in all fields.");
+    return false;
+  }
+
+  if (!isValidEmail(email)) {
+    alert("Please enter a valid email address.");
+    return false;
+  }
+
+  return true;
+}
+
+function isValidEmail(email) {
+  const emailRegex = /^\S+@\S+\.\S+$/;
+  return emailRegex.test(email);
+}
+
+document.querySelector("form").addEventListener("submit", function(event) {
+  if (!validateForm()) {
+    event.preventDefault();
+  }
+});
 
