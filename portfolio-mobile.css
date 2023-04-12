@@ -12,7 +12,7 @@
     background-color: none;
     height: 8%;
     padding-top: 9%;
-    padding-bottom: 14%;
+    padding-bottom: 12%;
   }
   label.logo {
     color: white;
@@ -35,6 +35,9 @@
   }
   #bars.active {
     display: none;
+  }
+  #bars.show {
+    display: block;
   }
   #times.active {
     display: block;
@@ -63,28 +66,31 @@
   div.menu ul li {
     list-style: none;
     color: white;
-    font-size: 11px;
-    padding-top: 43px;
+    font-size: 19px;
+    font-family: cambria;
+    padding-top: 41px;
   }
   div.menu ul li a {
     text-decoration: none;
     color: skyblue;
   }
   p {
-    color: white;
-    margin-left: 6%;
+    color: rgb(216,237,240);
     text-align: left;
-    margin-right: 6%;
     font-family: cambria;
   }
   p.intro {
     margin-bottom: 3%;
-    line-height: 2.5em;
+    line-height: 3.3em;
+    margin-left: 6%;
+    margin-right: 6%;
   }
   
   p.intro1 {
     line-height: 1.8em;
     margin-bottom: 5px;
+    margin-left: 6%;
+    margin-right: 6%;
   }
   button.top {
     position: fixed;
@@ -105,8 +111,45 @@
     margin: 6%;
     padding: 3px;
     text-align: center;
-    border: 1px dashed skyblue;
-    border-radius: 5%;
+    
+  }
+  img {
+    border-radius: 50%;
+    border: 2px dashed skyblue;
+  }
+  i.fa {
+    color: skyblue;
+    font-size: 2em;
+    padding: 4px;
+  }
+  div.social {
+    text-align: center;
+  }
+  div.about {
+    margin: 6%;
+  }
+  p.about {
+    line-height: 1.8em;
+  }
+  h2.about {
+    font-size: 2em;
+    color: skyblue;
+  }
+  button.projects {
+    background-color: skyblue;
+    outline: none;
+    border: 1px solid skyblue;
+    padding: 4px;
+    color: white;
+    font-weight: 900;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 6px;
+    margin-top: 12px;
+  }
+  #projects {
+    color: white;
+    font-size: 12px;
   }
 }
 @media only screen and (min-width: 768px) {
