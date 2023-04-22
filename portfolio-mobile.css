@@ -9,7 +9,7 @@
   }
   div.intro {
     background-image: url('background5.jpg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: none;
     height: 100%;
   }
