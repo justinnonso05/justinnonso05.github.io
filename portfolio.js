@@ -3,6 +3,10 @@ function show() {
   document.getElementById('bars').classList.toggle('active')
   document.getElementById('times').classList.toggle('active')
 }
+// const body = document.querySelector('.body');
+// body.addEventListener('click', () => {
+//   menu.classList.remove('active');
+// });
 
 const menu = document.querySelector('.menu');
 const links = document.querySelectorAll('.menu a');

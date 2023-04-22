@@ -4,15 +4,33 @@
     padding: 0px;
   }
   body {
-    background: linear-gradient(to bottom, #000000, #000813);
+    background: rgb(0,4,8);
+    backgound: linear-gradient(to bottom, #000000, #000813);
   }
+  div.intro {
+    background-image: url('background5.jpg');
+    background-size: contain;
+    background-repeat: none;
+    height: 100%;
+  }
+  div.intro::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40%;
+  width: 100%;
+  z-index: 0;
+  background: linear-gradient(to bottom, rgba(0,4,8,0), rgba(0,4,8,1));
+  pointer-events: none;
+ }
   header {
     width: 100%;
     overflow: hidden;
     background-color: none;
-    height: 8%;
+    height: 9%;
     padding-top: 9%;
-    padding-bottom: 12%;
+    padding-bottom: 15%;
   }
   label.logo {
     color: white;
@@ -22,13 +40,13 @@
     font-family: cambria;
   }
   #times {
-    color: skyblue;
+    color: white;
     font-size: 25px;
     position: absolute;
     display: none;
   }
   #bars {
-    color: skyblue;
+    color: white;
     font-size: 25px;
     position: absolute;
     display: block;
@@ -43,19 +61,22 @@
     display: block;
   }
   div.toggle {
+    position: relative;
     float: right;
     margin-right: 12%;
-    
+    z-index: 2;
   }
   
   #menu {
     position: absolute;
     width: 60%;
     height: 100%;
+    z-index: 2;
     background: rgba(0,8,19,0.987);
-    text-align: center;
+    text-align: left;
     transition: .4s;
     padding-top: 25%;
+    padding-left: 9%;
     left: -100%;
   }
   #menu.active {
@@ -75,7 +96,7 @@
     color: skyblue;
   }
   p {
-    color: rgb(216,237,240);
+    color: white;
     text-align: left;
     font-family: cambria;
   }
@@ -84,9 +105,12 @@
     line-height: 3.3em;
     margin-left: 6%;
     margin-right: 6%;
+    z-index: 2;
   }
   
   p.intro1 {
+    position: relative;
+    z-index: 1;
     line-height: 1.8em;
     margin-bottom: 5px;
     margin-left: 6%;
@@ -94,10 +118,11 @@
   }
   button.top {
     position: fixed;
-    bottom: 10px;
+    bottom: 20px;
     right: 10px;
-    padding: 9px;
-    border-radius: 50%;
+    padding: 4px;
+    z-index: 1; 
+    border-radius: 20%;
     outline: none;
     border: 1px solid skyblue;
     background: skyblue;
@@ -105,7 +130,7 @@
   }
   #arrow {
     color: white;
-    font-size: 30px;
+    font-size: 25px;
   }
   p.me {
     margin: 6%;
@@ -114,7 +139,7 @@
     
   }
   img {
-    border-radius: 50%;
+    border-radius: 10%;
     border: 2px dashed skyblue;
   }
   i.fa {
@@ -132,26 +157,31 @@
     line-height: 1.8em;
   }
   h2.about {
-    font-size: 2em;
+    font-family: cambria;
+    font-weight: 900;
+    margin-bottom: 10px;
+    font-size: 2.2em;
     color: skyblue;
   }
   button.projects {
+    position: relative;
+    z-index: 1;
     background-color: skyblue;
     outline: none;
     border: 1px solid skyblue;
-    padding: 4px;
+    padding: 8px;
     color: white;
     font-weight: 900;
     border-radius: 5px;
-    font-size: 15px;
-    margin: 6px;
-    margin-top: 12px;
+    font-size: 18px;
+    margin: 9%;
+    margin-top: 15%;
   }
   #projects {
     color: white;
-    font-size: 12px;
+    font-size: 15px;
   }
-  div.about button a {
+  button.projects a {
     color: white;
     text-decoration: none;
   }
