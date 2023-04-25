@@ -1,3 +1,6 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
 @media only screen and (max-width: 770px) {
   * {
     margin: 0px;
@@ -6,6 +9,7 @@
   body {
     background: rgb(0,4,8);
     backgound: linear-gradient(to bottom, #000000, #000813);
+    
   }
   div.intro {
     background-image: url('background5.jpg');
@@ -23,6 +27,9 @@
   z-index: 0;
   background: linear-gradient(to bottom, rgba(0,4,8,0), rgba(0,4,8,1));
   pointer-events: none;
+ }
+ span.name {
+   font-family: 'Ubuntu';
  }
   header {
     width: 100%;
@@ -130,7 +137,7 @@
   }
   #arrow {
     color: white;
-    font-size: 25px;
+    font-size: 19px;
   }
   p.me {
     margin: 6%;
@@ -149,6 +156,7 @@
   }
   div.social {
     text-align: center;
+    padding-bottom: 1em;
   }
   div.about {
     margin: 6%;
@@ -244,12 +252,20 @@
   }
   div.footer {
     width: 100%;
-    margin-top: 7%;
+    margin-top: 4%;
     color: skyblue;
     padding-top: 1em;
     padding-bottom: 1em;
     text-align: center;
-    font-family: calibri;
+    font-family: 'Poppins';
+  }
+  hr {
+    background: skyblue;
+    outline-color: skyblue;
+    border: 1px solid skyblue;
+    width: 100%;
+    margin-top: 16%;
+    
   }
 }
 @media only screen and (min-width: 768px) {
