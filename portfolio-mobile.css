@@ -118,7 +118,7 @@
   }
   button.top {
     position: fixed;
-    bottom: 20px;
+    bottom: 5%;
     right: 10px;
     padding: 4px;
     z-index: 1; 
@@ -144,7 +144,7 @@
   }
   i.fa {
     color: skyblue;
-    font-size: 2em;
+    font-size: 1.4em;
     padding: 4px;
   }
   div.social {
@@ -164,7 +164,7 @@
     color: skyblue;
   }
   button.projects {
-    position: relative;
+    position: absolute;
     z-index: 1;
     background-color: skyblue;
     outline: none;
@@ -174,8 +174,8 @@
     font-weight: 900;
     border-radius: 5px;
     font-size: 18px;
-    margin: 9%;
-    margin-top: 15%;
+    bottom: 19%;
+    left: 10%;
   }
   #projects {
     color: white;
@@ -244,6 +244,7 @@
   }
   div.footer {
     width: 100%;
+    margin-top: 7%;
     color: skyblue;
     padding-top: 1em;
     padding-bottom: 1em;
