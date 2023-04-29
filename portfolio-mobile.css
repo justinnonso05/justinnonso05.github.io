@@ -40,16 +40,16 @@ html {
     width: 100%;
     overflow: hidden;
     background-color: none;
-    height: 9%;
-    padding-top: 9%;
-    padding-bottom: 15%;
+    height: 4vh;
+    padding-top: 3vh;
+    padding-bottom: 15vh;
   }
   label.logo {
     color: white;
-    font-size: 1.7em;
+    font-size: 3.5vh;
     margin-left: 7%;
     font-weight: 900;
-    font-family: "Ubuntu";
+    font-family: "Poppins";
   }
   #times {
     color: white;
@@ -81,7 +81,7 @@ html {
   
   #menu {
     position: absolute;
-    width: 60%;
+    width: 32vh;
     height: 100%;
     z-index: 2;
     background: rgba(0,8,19,0.987);
@@ -89,8 +89,8 @@ html {
     transition: .4s;
     justify-content: center;
     align-items: center;
-    padding-top: 25%;
-    padding-left: 9%;
+    padding-top: 22vh;
+    padding-left: 5vh;
     left: -100%;
   }
   #menu.active {
@@ -101,9 +101,9 @@ html {
   div.menu ul li {
     list-style: none;
     color: white;
-    font-size: 19px;
+    font-size: 3.4vh;
     font-family: 'Poppins';
-    padding-top: 41px;
+    padding-top: 5.5vh;
   }
   div.menu ul li a {
     text-decoration: none;
@@ -115,17 +115,20 @@ html {
     font-family: cambria;
   }
   p.intro {
+    font-size: 3vh;
     margin-bottom: 3%;
-    line-height: 3.3em;
+    line-height: 8vh;
     margin-left: 6%;
     margin-right: 6%;
     z-index: 2;
   }
-  
+  span.name {
+    font-size: 8vh;
+  }
   p.intro1 {
     position: relative;
     z-index: 1;
-    line-height: 1.8em;
+    line-height: 4.3vh;
     margin-bottom: 5px;
     margin-left: 6%;
     margin-right: 6%;
@@ -191,7 +194,7 @@ html {
     font-weight: 900;
     border-radius: 5px;
     font-size: 18px;
-    bottom: 19%;
+    bottom: 16vh;
     left: 10%;
   }
   #projects {
@@ -292,9 +295,22 @@ html {
     width: 50%;
     text-align: right;
   }
+  div.intro::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40%;
+  width: 100%;
+  z-index: 0;
+  background: linear-gradient(to bottom, rgba(0,4,8,0), rgba(0,4,8,1));
+  pointer-events: none;
+ }
   div.menu ul li {
     display: inline-flex;
     padding-right: 3%;
+    font-size: vh;
+    font-family: "Poppins";
   }
   div.menu ul {
     list-style: none;
@@ -305,7 +321,41 @@ html {
   }
   label.logo {
     color: white;
+    font-weight: 900;
     font-family: "ubuntu";
+  }
+  label.logo {
+    margin-left: 3vh;
+  }
+  button.top {
+    position: fixed;
+    bottom: 5%;
+    right: 10px;
+    display: none;
+    padding: 4px;
+    z-index: 2; 
+    border-radius: 20%;
+    outline: none;
+    border: 1px solid skyblue;
+    background: skyblue;
+    
+  }
+  #arrow {
+    color: white;
+    font-size: 19px;
+  }
+  p {
+    color: white;
+  }
+  p.intro {
+    margin-left: 2vh;
+    font-size: 4vh;
+  }
+  p.intro1 {
+    margin-left: 2vh;
+    float: right;
+    margin-right: 4vh;
+    line-height: 17vh;
   }
 }
   
