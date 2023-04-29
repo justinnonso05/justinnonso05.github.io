@@ -3,9 +3,12 @@ function show() {
   document.getElementById('bars').classList.toggle('active')
   document.getElementById('times').classList.toggle('active')
 }
+window.onscroll = () => {
+  document.querySelector('button.top').style.display = "block";
+}
 // const body = document.querySelector('.body');
 // body.addEventListener('click', () => {
-//   menu.classList.remove('active');
+//   menu.classList.remove('active'); 
 // });
 
 const menu = document.querySelector('.menu');
@@ -20,6 +23,7 @@ links.forEach(link => {
     //bars.classList.add('show')
   });
 });
+
 function validateForm() {
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
@@ -48,4 +52,3 @@ document.querySelector("form").addEventListener("submit", function(event) {
     event.preventDefault();
   }
 });
-
