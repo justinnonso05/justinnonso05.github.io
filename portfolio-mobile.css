@@ -115,6 +115,7 @@ html {
     font-family: cambria;
   }
   p.intro {
+    font-family: 'Poppins';
     font-size: 3vh;
     margin-bottom: 3%;
     line-height: 8vh;
@@ -128,6 +129,8 @@ html {
   p.intro1 {
     position: relative;
     z-index: 1;
+    font-size: 3vh;
+    font-family: 'Poppins';
     line-height: 4.3vh;
     margin-bottom: 5px;
     margin-left: 6%;
@@ -293,6 +296,7 @@ html {
     position: absolute;
     right: 5%;
     width: 50%;
+    padding-top: 3vh;
     text-align: right;
   }
   div.intro::after {
@@ -309,36 +313,75 @@ html {
   div.menu ul li {
     display: inline-flex;
     padding-right: 3%;
-    font-size: vh;
+    font-size: 3vh;
     font-family: "Poppins";
+  }
+  @media (max-width: 1200px) {
+     div.menu ul li {
+      font-size: 2.3vh;
+     }
   }
   div.menu ul {
     list-style: none;
   }
   div.menu ul li a {
+    font-weight: 500;
     text-decoration: none;
+    color: white;
+  }
+  div.menu ul li a:hover {
+    font-weight: 900;
     color: skyblue;
   }
   label.logo {
     color: white;
     font-weight: 900;
     font-family: "ubuntu";
+    margin-left: 8vh;
+    font-size: 4.5vh;
   }
-  label.logo {
-    margin-left: 3vh;
+  header {
+    padding-top: 3.0vh; 
   }
   button.top {
     position: fixed;
-    bottom: 5%;
-    right: 10px;
+    bottom: 7vh;
+    right: 4vh;
     display: none;
     padding: 4px;
     z-index: 2; 
     border-radius: 20%;
     outline: none;
     border: 1px solid skyblue;
-    background: skyblue;
+    background-color: skyblue;
     
+  }
+  #projects {
+    color: white;
+    font-size: 2.3vh;
+  }
+  button.projects {
+    position: absolute;
+    z-index: 1;
+    background-color: skyblue;
+    outline: none;
+    transition: .5s;
+    border: 2px solid skyblue;
+    padding: 1.4vh;
+    color: white;
+    font-weight: 900;
+    border-radius: 5px;
+    font-size: 2.7vh;
+    bottom: 14vh;
+    left: 10%;
+  }
+  button.projects:hover {
+    background: transparent;
+
+  }
+  button.projects a {
+    color: white;
+    text-decoration: none;
   }
   #arrow {
     color: white;
@@ -348,14 +391,41 @@ html {
     color: white;
   }
   p.intro {
-    margin-left: 2vh;
-    font-size: 4vh;
+    position: relative;
+    margin-left: 7vh;
+    font-size: 3vh;
+    z-index: 1;
+    font-family: 'Poppins';
+    line-height: 12vh;
+    margin-top: 13vh;
+  }
+  span.name {
+    font-size: 18vh;
+    font-family: 'ubuntu';
+  }
+   @media (max-width: 1200px) {
+     span.name {
+      font-size: 15vh;
+     }
   }
   p.intro1 {
+    position: relative;
     margin-left: 2vh;
-    float: right;
-    margin-right: 4vh;
-    line-height: 17vh;
+   
+    margin-top: 1.4vh;
+    z-index: 1;
+    font-size: 4vh;
+    font-family: 'Poppins';
+    margin-left: 10vh;
+    line-height: 7vh;
   }
 }
-  
+/*@media (max-width: 1800px) and (min-width: 770px) {
+  div.menu ul li {
+    font-size: 2vh;
+  }
+  p.intro1 {
+    font-size: 3vh;
+  }
+}
+  */
