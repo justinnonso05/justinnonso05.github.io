@@ -1,0 +1,115 @@
+/* mobile-first styles */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav {
+  display: none;
+}
+
+.menu-icon {
+  display: block;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin-right: 1rem;
+}
+
+.menu-icon span {
+  display: block;
+  background-color: #000;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-icon span::before,
+.menu-icon span::after {
+  content: '';
+  display: block;
+  background-color: #000;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-icon span::before {
+  top: -8px;
+}
+
+.menu-icon span::after {
+  bottom: -8px;
+}
+
+/* media query for tablets */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+  
+  header {
+    padding: 2rem;
+  }
+  
+  nav {
+    display: block;
+    flex-basis: 100%;
+    padding-bottom: 1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    margin: 0 1rem;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+}
+
+/* media query for desktop screens */
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+  
+  header {
+    flex-wrap: nowrap;
+    padding: 3rem;
+  }
+  
+  nav {
+    flex-basis: auto;
+    padding-bottom: 0;
+  }
+  
+  nav ul {
+    justify-content: flex-end;
+  }
+  
+  nav li {
+    margin: 0 2rem;
+  }
+}

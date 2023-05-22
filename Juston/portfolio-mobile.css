@@ -1,0 +1,436 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background: rgb(0,4,8);
+  background-color: linear-gradient(to bottom, #000000, #000813);
+  
+}
+div.intro {
+  background-image: url('background5.jpg');
+  background-size: cover;
+  background-repeat: none;
+  height: 100%;
+}
+div.intro::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40%;
+  width: 100%;
+  z-index: 0;
+  background: linear-gradient(to bottom, rgba(0,4,8,0), rgba(0,4,8,1));
+  pointer-events: none;
+}
+span.name {
+  font-family: 'Ubuntu';
+}
+header {
+  width: 100%;
+  overflow: hidden;
+  height: 2vh;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+  background-color: black;
+  padding-top: 3vh;
+  padding-bottom: 15vh;
+}
+label.logo {
+  color: white;
+  font-size: 3.5vh;
+  margin-left: 7%;
+  font-weight: 900;
+  font-family: "Poppins";
+}
+#times {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  display: none;
+}
+#bars {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  display: block;
+}
+#bars.active {
+  display: none;
+}
+#bars.show {
+  display: block;
+}
+#times.active {
+  display: block;
+}
+div.toggle {
+  position: absolute;
+  float: right;
+  margin-right: 12%;
+  z-index: 3;
+}
+
+#menu {
+  position: absolute;
+  width: 32vh;
+  height: 100%;
+  z-index: 3;
+  background: rgba(0,8,19,0.987);
+  text-align: left;
+  transition: .4s;
+  justify-content: center;
+  align-items: center;
+  padding-top: 22vh;
+  padding-left: 5vh;
+  left: -100%;
+}
+#menu.active {
+  left: 0%;
+  box-shadow: 0px 0px 0px 1000px rgba(0,0,0,0.598);
+  position: fixed;
+}
+div.menu ul li {
+  list-style: none;
+  color: white;
+  font-size: 3.4vh;
+  font-family: 'Poppins';
+  padding-top: 5.5vh;
+}
+div.menu ul li a {
+  text-decoration: none;
+  color: skyblue;
+}
+p {
+  color: white;
+  text-align: left;
+  font-family: cambria;
+}
+p.intro {
+  font-family: 'Poppins';
+  font-size: 3vh;
+  margin-bottom: 3%;
+  line-height: 8vh;
+  margin-left: 6%;
+  margin-right: 6%;
+  z-index: 2;
+}
+span.name {
+  font-size: 8vh;
+}
+p.intro1 {
+  position: relative;
+  z-index: 1;
+  font-size: 3vh;
+  font-family: 'Poppins';
+  line-height: 4.3vh;
+  margin-bottom: 5px;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+button.top {
+  position: fixed;
+  bottom: 5%;
+  right: 10px;
+  display: none;
+  padding: 4px;
+  z-index: 3; 
+  border-radius: 20%;
+  outline: none;
+  border: 1px solid skyblue;
+  background: skyblue;
+  
+}
+#arrow {
+  color: white;
+  font-size: 19px;
+}
+p.me {
+  margin: 6%;
+  padding: 3px;
+  text-align: center;
+  
+}
+img {
+  border-radius: 10%;
+  border: 2px dashed skyblue;
+}
+i.fa {
+  color: skyblue;
+  font-size: 1.4em;
+  padding: 4px;
+}
+div.social {
+  text-align: center;
+  padding-bottom: 1em;
+}
+div.about {
+  margin: 6%;
+}
+p.about {
+  line-height: 1.8em;
+}
+h2.about {
+  text-align: center;
+  font-family: 'ubuntu';
+  font-weight: 900;
+  margin-bottom: 10px;
+  font-size: 2.2em;
+  color: skyblue;
+}
+button.projects {
+  position: absolute;
+  z-index: 1;
+  background-color: skyblue;
+  outline: none;
+  border: 1px solid skyblue;
+  padding: 8px;
+  color: white;
+  font-weight: 900;
+  border-radius: 5px;
+  font-size: 18px;
+  bottom: 16vh;
+  left: 10%;
+}
+#projects {
+  color: white;
+  font-size: 15px;
+}
+button.projects a {
+  color: white;
+  text-decoration: none;
+}
+div.contact {
+  margin: 6%;
+  margin-top: 20%;
+  background-color:rgba(184,226,233,0.153);
+  padding: 8%;
+  text-align: center;
+  border-radius: 10px;
+}
+div.contact h2{
+  color: skyblue;
+  font-size: 2em;
+  padding-bottom: .5em;
+  font-family:'ubuntu';
+}
+form.contact {
+  text-align: center;
+  color: white;
+  font-family: calibri;
+}
+form.contact input {
+  margin-top: 1.4em;
+  width: 100%;
+  color: white;
+  outline: none;
+  background: none;
+  border-radius: 5px;
+  border: 1px solid skyblue;
+  padding: .8em;
+}
+textarea.message {
+  margin-top: 1.4em;
+  width: 100%;
+  color: white;
+  outline: none;
+  background: none;
+  border-radius: 5px;
+  border: 1px solid skyblue;
+  padding: 5px;
+}
+button.submit {
+  background: skyblue;
+  outline: none;
+  border: 1px solid skyblue;
+  width: 95%;
+  padding: .4em;
+  color: white;
+  margin-top: 1.3em;
+  margin-bottom: 1.4em;
+  font-size: 1.3em;
+  font-weight: 800;
+  border-radius: 5px;
+}
+form.contact a {
+  text-decoration: none;
+  color: skyblue;
+}
+div.footer {
+  width: 100%;
+  margin-top: 4%;
+  color: skyblue;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+  font-family: 'Poppins';
+}
+hr {
+  background: skyblue;
+  outline-color: skyblue;
+  border: 1px solid skyblue;
+  width: 100%;
+  margin-top: 16%;
+  
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background: rgb(0,4,8);
+  }
+  div.intro {
+    background-image: url('background5.jpg');
+    background-size: cover;
+    background-repeat: none;
+    height: 100%;
+  }
+  div.menu {
+    position: absolute;
+    right: 5%;
+    width: 50%;
+    padding-top: 3vh;
+    text-align: right;
+  }
+  div.intro::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40%;
+  width: 100%;
+  z-index: 0;
+  background: linear-gradient(to bottom, rgba(0,4,8,0), rgba(0,4,8,1));
+  pointer-events: none;
+ }
+  div.menu ul li {
+    display: inline-flex;
+    padding-right: 3%;
+    font-size: 3vh;
+    font-family: "Poppins";
+  }
+  @media (max-width: 1200px) {
+     div.menu ul li {
+      font-size: 2.3vh;
+     }
+  }
+  div.menu ul {
+    list-style: none;
+  }
+  div.menu ul li a {
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+  }
+  div.menu ul li a:hover {
+    font-weight: 900;
+    color: skyblue;
+
+  }
+  label.logo {
+    color: white;
+    font-weight: 900;
+    font-family: "ubuntu";
+    margin-left: 8vh;
+    font-size: 4.5vh;
+  }
+  header {
+    padding-top: 3.0vh; 
+    position: fixed;
+    top: 0px;
+    background-color: black;
+  }
+  button.top {
+    position: fixed;
+    bottom: 7vh;
+    right: 4vh;
+    display: none;
+    padding: 4px;
+    z-index: 2; 
+    border-radius: 20%;
+    outline: none;
+    border: 1px solid skyblue;
+    background-color: skyblue;
+    
+  }
+  #projects {
+    color: white;
+    font-size: 2.3vh;
+  }
+  button.projects {
+    position: absolute;
+    z-index: 1;
+    background-color: skyblue;
+    outline: none;
+    transition: .5s;
+    border: 2px solid skyblue;
+    padding: 1.4vh;
+    color: white;
+    font-weight: 900;
+    border-radius: 5px;
+    font-size: 2.7vh;
+    bottom: 14vh;
+    left: 10%;
+  }
+  button.projects:hover {
+    background: transparent;
+
+  }
+  button.projects a {
+    color: white;
+    text-decoration: none;
+  }
+  #arrow {
+    color: white;
+    font-size: 19px;
+  }
+  p {
+    color: white;
+  }
+  p.intro {
+    position: relative;
+    margin-left: 7vh;
+    font-size: 3vh;
+    z-index: 1;
+    font-family: 'Poppins';
+    line-height: 12vh;
+    margin-top: 13vh;
+  }
+  span.name {
+    font-size: 18vh;
+    font-family: 'ubuntu';
+  }
+   @media (max-width: 1200px) {
+     span.name {
+      font-size: 15vh;
+     }
+  }
+  p.intro1 {
+    position: relative;
+    margin-left: 2vh;
+   
+    margin-top: 1.4vh;
+    z-index: 1;
+    font-size: 4vh;
+    font-family: 'Poppins';
+    margin-left: 10vh;
+    line-height: 7vh;
+  }
+}
+/*@media (max-width: 1800px) and (min-width: 770px) {
+  div.menu ul li {
+    font-size: 2vh;
+  }
+  p.intro1 {
+    font-size: 3vh;
+  }
+}
+  */
