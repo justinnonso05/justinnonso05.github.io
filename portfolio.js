@@ -1,11 +1,16 @@
 function show() {
-  document.getElementById('menu').classList.toggle('active')
-  document.getElementById('bars').classList.toggle('active')
-  document.getElementById('times').classList.toggle('active')
-}
+  document.getElementById('menu').classList.add('active')
+  document.getElementById('bars').classList.add('active')
+};
+document.getElementById("times").onclick = function() {
+  document.getElementById('menu').classList.remove('active')
+  document.getElementById('bars').classList.remove('active')
+};
+
 window.onscroll = () => {
-  document.querySelector('button.top').style.display = "block";
-}
+  document.querySelector('#to-top').style.display = "block";
+  document.querySelector('#header').style.boxshadow = "0px 0px 1px 1px rgba(156, 151, 151, 0.479)";
+};
 // const body = document.querySelector('.body');
 // body.addEventListener('click', () => {
 //   menu.classList.remove('active'); 
@@ -52,3 +57,18 @@ document.querySelector("form").addEventListener("submit", function(event) {
     event.preventDefault();
   }
 });
+// document.addEventListener("DOMContentLoaded", function() {
+//   var header = document.querySelector("header");
+//   var content = document.querySelector(".content");
+
+//   window.addEventListener("scroll", function() {
+//     var rect = header.getBoundingClientRect();
+//     var headerBottom = rect.bottom;
+  
+//     if (headerBottom > 0) {
+//       content.classList.add("blurred");
+//     } else {
+//       content.classList.remove("blurred");
+//     }
+//   });
+// });
