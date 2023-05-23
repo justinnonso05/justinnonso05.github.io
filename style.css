@@ -205,6 +205,7 @@ h2.about span {
 img.me {
     text-align: center;
     width: 100%;
+    margin-top: 15px;
     margin-left: -1px;
     border: 2px dashed rgb(32, 5, 70);
     border-radius: 7px;
@@ -212,30 +213,78 @@ img.me {
 /* Contact section */
 
 
-div.contact {
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20%;
-    justify-content: center;
-    background-color:  rgb(250, 243, 252);
-    padding: 6%;
-    box-shadow: 0px 0px 1px 1px rgba(124, 118, 118, 0.247);
-}
-div.contact h2{
-    text-decoration: underline;
+h2.contact {
+    grid-column: 1 / -1;
     color: rgb(32, 5, 70);
+    font-weight: 900;
+    font-family: "ubuntu";
     font-size: 30px;
-    padding-bottom: 15px;
-    font-family:'ubuntu';
+    text-align: left;
+    text-decoration: underline;
 }
-div.contact h2 span {
+h2.contact span {
     padding: 1px;
     border-bottom: 2px solid rgb(32, 5, 70);
 }
-form.contact {
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    color: black;
+    margin-top: 10%;
+    background-color:  rgb(250, 243, 252);
+    padding: 6%;
+}
+
+
+.contact-info p {
+    color: rgb(32, 5, 70);
+    font-size: 13px;
+}
+.contact-info p i {
+    margin-right: 10px;
+    color: rgb(32, 5, 70);
+    font-size: 24px;
+}
+.contact-social a label {
+    display: none;
+}
+.contact-wrapper {
+    grid-column: 1 / -1;
+    display: grid;
+    justify-content: center; 
+}
+form.contact {
+    width: 85%;
+    margin-top: 32px;
+    align-self: center;
+    justify-self: center;
+    background-color: rgba(32, 5, 70, .08);
+    border-radius: 5px;
+    padding: 20px;
+}
+.contact-info {
+    text-align: left;
+}
+
+.contact-social {
+    display: flex;
+    margin-top: -18px;
+    font-size: 19px;
+    color: rgb(32, 5, 70);
+}
+.contact-social a i {
+    color: rgb(32, 5, 70);
+    font-size: 30px;
+    margin-left: 20px;
+}
+.contact-social a {
+    text-align: left;
+    margin-top: 16px;
+    text-decoration: none;
+    color: rgb(32, 5, 70);
 }
 form.contact input {
     margin-top: 1.4em;
@@ -273,109 +322,127 @@ button.submit {
 }
 form.contact a {
     text-decoration: none;
-    color: rgb(32, 5, 70);
+    color: rgb(59, 19, 116);
 }
-
-div.skills {
+form.contact a:hover {
+    text-decoration: underline;
+}
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    align-items: start;
     margin: 4px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20%;
-    justify-content: center;
+    margin-top: 10%;
     background-color:  rgb(250, 243, 252);
     padding: 6%;
     box-shadow: 0px 0px 1px 1px rgba(124, 118, 118, 0.247);
-    border-radius: 10px;    
+    border-radius: 10px;   
 }
-div.skills h2 {
-    text-decoration: underline;
-    color: rgb(32, 5, 70);
-    font-size: 25px;
-    padding-bottom: 15px;
-    font-family:'ubuntu';
-}
-div.skills h2 span {
-    padding: 1px;
-    border-bottom: 2px solid rgb(32, 5, 70);
-}
-div.skills > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 9px;
-    margin-bottom: 7px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 2px 2px rgba(32, 5, 70, .5);;
-}
-div.skills > div > img {
+.skill-image {
     width: 50px;
-    height: auto;
 }
-div.skills div.design img {
-    width: 64px;
-    height: auto;
+#graphics {
+    width: 75px;
 }
-
-div.myprojects {
-    margin: 4px;
+.skill {
     display: flex;
     flex-direction: column;
-    margin-top: 20%;
+    align-items: center;
     justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0px 0px 2px 2px rgba(32, 5, 70, .5);
+}
+h2.skill-heading {
+    grid-column: 1 / -1;
+    color: rgb(32, 5, 70);
+    font-weight: 900;
+    font-family: "ubuntu";
+    font-size: 24px;
+    text-align: left;
+    text-decoration: underline;
+}
+.skills-wrapper {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+}
+h2.skill-heading span {
+    padding: 1px;
+    border-bottom: 2px solid rgb(32, 5, 70);
+
+}
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+    text-align: center;
+    margin-top: 10%;
     background-color:  rgb(250, 243, 252);
     padding: 6%;
     box-shadow: 0px 0px 1px 1px rgba(124, 118, 118, 0.247);
-    border-radius: 10px;    
+    border-radius: 10px;   
 }
-div.myprojects h2 {
-    text-decoration: underline;
+.project-image {
+    width: 70%;
+    margin-bottom: 10px;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid rgb(32, 5, 70);
+}
+.project:hover {
+    box-shadow: 0px 0px 2px 2px rgba(32, 5, 70, .5);
+}
+h2.project-title {
+    grid-column: 1 / -1;
     color: rgb(32, 5, 70);
-    font-size: 25px;
-    padding-bottom: 15px;
-    font-family:'ubuntu';
+    font-weight: 900;
+    font-family: "ubuntu";
+    font-size: 30px;
+    text-align: left;
+    text-decoration: underline;
 }
-div.myprojects h2 span {
+.projects-wrapper {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+}
+h2.project-title span {
     padding: 1px;
     border-bottom: 2px solid rgb(32, 5, 70);
 }
-div.myprojects > div > img {
-    width: 70%;
-    height: auto;
-    margin-bottom: 8px;
-}
-div.myprojects > div > h3 > a {
-    text-decoration: none;
+.project-container .projects-wrapper .project a {
     color: rgb(32, 5, 70);
-}
-div.myprojects > div {
-    display: flex;
-    padding: 5px;
-    border-radius: 4px;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 10px;
-    justify-content: center;
-    align-items: center;
-}
-
-
-div.myprojects > a {
-    color: white;
-    background-color: rgb(32, 5, 70);
     padding: 10px;
     text-decoration: none;
+}
+.view-all {
     text-align: center;
     margin-top: 17px;
-    width: 80%;
     align-self: center;
     justify-self: center;
     border-radius: 5px;
-}
-
-div.myprojects > div:hover {
-    box-shadow: 0px 0px 2px 2px rgba(32, 5, 70, 0.4);
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    width: 65%;
+    background-color: rgb(32, 5, 70);
 }
 
 
@@ -390,7 +457,7 @@ div.myprojects > div:hover {
     }
 }
 div.square {
-    height: 30%;
+    height: 15rem;
     width: 190px;
     position: absolute;
     top: 0px;
@@ -448,20 +515,304 @@ div.cover {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-
+.image {
+    display: none;
+}
 div.footer {
     display: flex;
-    padding-top: 10px;
+    padding-top: 25px;
     text-align: center;
+    padding-bottom: 25px;
     flex-direction: column;
     background-color: rgba(32, 5, 70, 0.3);
 
 }
+div.footer label {
+    text-align: center;
+}
+
 div.footer div.social a {
     font-size: 25px;
 }
 div.footer div.social a i {
     color: rgb(32, 5, 70);
-    margin: 3px 7px 34px;
+    margin: 3px 3px 34px;
+
+}
+nav {
+    display: none;
+}
+
+/*Media queries start*/
+
+@media only screen and (min-width: 770px) {
+    nav {
+        display: flex;
+        float: right;
+        position: absolute;
+        right: 20px;
+    }
+    div.nav ul li {
+        margin-right: 15px;
+    }
+    div.nav ul {
+        display: inline-flex;
+        list-style: none;
+    }
+    @media only screen and (min-width: 1000px) {
+        div.nav ul li a {
+            font-size: 20px;
+        }
+    }
+    #bars, #times, #menu {
+        display: none;
+    }
+    div.nav ul li a {
+        text-decoration: none;
+        color: rgb(32, 5, 70);
+        font-weight: 700;
+        padding: 3px;
+        transition: .4s;
+        font-siz e: 20px;
+        font-family: 'poppins', Arial, Helvetica, sans-serif;
+    }
+    div.nav ul li a:hover {
+        border-radius: 3px;
+        background-color: rgba(32, 5, 70, .27);
+    }
+    span.greet {
+        font-size: 35px;
+    }
+    @media only screen and (min-width: 1000px) {
+        span.name {
+            font-size: 80px;
+        }
+    }    
+    @media only screen and (max-width: 1000px) {
+            span.name {
+                
+                font-size: 65px;
+            }  
+    }
+    p.intro1 {
+        margin-bottom: 10%;
+        font-size: 27px;
+        line-height: 60px;
+    }
+    div.square {
+        height: 50%;
+        width: 30%;
+    }
+    div.about {
+        margin: 0px;
+        width: 50%;
+        float: left;
+        margin-right: 15px;
+    }
+    div.about img{
+        display: none;
+    }
+    .about-container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 11%;
+        align-items: center;
+    }
+    img.image {
+        width: 50%;
+        height: 30em;
+        margin: 10px;
+        display: flex;
+        border: 2px dashed rgb(32, 5, 70);
+        border-radius: 7px;
+    }
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        align-items: start;
+        margin: 4px;
+        margin-top: 10%;
+        background-color:  rgb(250, 243, 252);
+        padding: 6%;
+        box-shadow: 0px 0px 1px 1px rgba(124, 118, 118, 0.247);
+        border-radius: 10px;   
+    }
+    .skill-image {
+        width: 100px;
+    }
+    #graphics {
+        width: 135px;
+    }
+    .skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+        box-shadow: 0px 0px 2px 2px rgba(32, 5, 70, .5);
+    }
+    h2.skill-heading {
+        grid-column: 1 / -1;
+        color: rgb(32, 5, 70);
+        font-weight: 900;
+        font-family: "ubuntu";
+        font-size: 30px;
+        text-align: left;
+        text-decoration: underline;
+    }
+    .skills-wrapper {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
+    h2.skill-heading span {
+        padding: 1px;
+        border-bottom: 2px solid rgb(32, 5, 70);
+
+    }
+    .project-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        margin: 4px;
+        text-align: center;
+        margin-top: 10%;
+        background-color:  rgb(250, 243, 252);
+        padding: 6%;
+        box-shadow: 0px 0px 1px 1px rgba(124, 118, 118, 0.247);
+        border-radius: 10px;   
+    }
+    .project-image {
+        width: 70%;
+    }
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid rgb(32, 5, 70);
+    }
+    .project:hover {
+        box-shadow: 0px 0px 2px 2px rgba(32, 5, 70, .5);
+    }
+    h2.project-title {
+        grid-column: 1 / -1;
+        color: rgb(32, 5, 70);
+        font-weight: 900;
+        font-family: "ubuntu";
+        font-size: 30px;
+        text-align: left;
+        text-decoration: underline;
+    }
+    .projects-wrapper {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+    h2.project-title span {
+        padding: 1px;
+        border-bottom: 2px solid rgb(32, 5, 70);
+    }
+    .project-container .projects-wrapper .project a {
+        color: rgb(32, 5, 70);
+        padding: 10px;
+        text-decoration: none;
+    }
+    .view-all {
+        text-align: center;
+        margin-top: 17px;
+        align-self: center;
+        justify-self: center;
+        border-radius: 5px;
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        width: 65%;
+        background-color: rgb(32, 5, 70);
+    }
+
+    .contact-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10%;
+        background-color:  rgb(250, 243, 252);
+        padding: 6%;
+    }
+    .contact-wrapper {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center; 
+    }
+    form.contact {
+        width: 70%;
+        background-color: rgba(32, 5, 70, .08);
+        border-radius: 5px;
+        padding: 20px;
+    }
+    .contact-info {
+        text-align: left;
+        margin-left: 0px;
+    }
+
+    .contact-social {
+        display: grid;
+        margin: -20px;
+        padding: 0px;
+        font-size: 19px;
+        color: rgb(32, 5, 70);;
+    }
+    .contact-social a i {
+        color: rgb(32, 5, 70);
+        font-size: 30px;
+    }
+    .contact-social a {
+        margin-top: 16px;
+        display: flex;
+        text-decoration: none;
+        color: rgb(32, 5, 70);
+    }
+    h2.contact {
+        grid-column: 1 / -1;
+        color: rgb(32, 5, 70);
+        font-weight: 900;
+        font-family: "ubuntu";
+        font-size: 30px;
+        text-align: left;
+        text-decoration: underline;
+    }
+    .contact-info p {
+        color: rgb(32, 5, 70);
+        font-size: 20px;
+    }
+    .contact-info p i {
+        margin-right: 10px;
+        color: rgb(32, 5, 70);
+        font-size: 30px;
+    }
+    h2.contact span {
+        padding: 1px;
+        border-bottom: 2px solid rgb(32, 5, 70);
+    }
+    .contact-social a label {
+        display: flex;
+        margin-left: 10px;
+    }
 
 }

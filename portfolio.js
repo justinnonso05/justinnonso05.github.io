@@ -57,18 +57,8 @@ document.querySelector("form").addEventListener("submit", function(event) {
     event.preventDefault();
   }
 });
-// document.addEventListener("DOMContentLoaded", function() {
-//   var header = document.querySelector("header");
-//   var content = document.querySelector(".content");
-
-//   window.addEventListener("scroll", function() {
-//     var rect = header.getBoundingClientRect();
-//     var headerBottom = rect.bottom;
-  
-//     if (headerBottom > 0) {
-//       content.classList.add("blurred");
-//     } else {
-//       content.classList.remove("blurred");
-//     }
-//   });
+// window.addEventListener('load', function() {
+//   var aboutContainer = document.querySelector('.about').offsetHeight;
+//   var image = document.querySelector('.image');
+//   image.style.height = aboutContainer + 'px';
 // });
