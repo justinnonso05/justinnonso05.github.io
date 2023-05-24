@@ -47,7 +47,7 @@ div.menu.active {
     font-size: 26px;
     color: rgb(50, 11, 104);
     cursor: pointer;
-    margin-top: 5px;
+    margin-top: 2px;
 }
 #bars.active {
     display: none;
@@ -141,7 +141,7 @@ header:before {
     margin: -20px;
 }
 div.intro {
-    height: 80%;
+    height: 100vh;
     display: flex;
     margin-top: 10%;
     padding-left: 6%;
@@ -182,26 +182,36 @@ p.intro {
     padding-top: 40px;
 }
 /* About section */
-div.about {
-    display: flex;
-    flex-direction: column;
-    padding: 6%;
-    margin-top: 28%;
-    justify-content: center;
-    box-shadow: 0px 0px 1px 1px rgba(124, 118, 118, 0.247);
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: start;
+    margin-top: 10%;
     background-color: rgb(250, 243, 252);
-} 
-h2.about {
+    box-shadow: 0px 0px 1px 1px rgba(124, 118, 118, 0.247);
+    padding: 6%;  
+}
+
+.about-wrapper {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+}
+h2.about-title {
+    grid-column: 1 / -1;
     color: rgb(32, 5, 70);
     font-weight: 900;
     font-family: "ubuntu";
-    font-size: 30px;
+    font-size: 36px;
+    text-align: left;
     text-decoration: underline;
 }
-h2.about span {
+h2.about-title span {
     padding: 1px;
     border-bottom: 2px solid rgb(32, 5, 70);
 }
+
 img.me {
     text-align: center;
     width: 100%;
@@ -238,10 +248,12 @@ h2.contact span {
     padding: 6%;
 }
 
-
+.connect{
+    margin-top: 30px;
+}
 .contact-info p {
     color: rgb(32, 5, 70);
-    font-size: 13px;
+    font-size: 16px;
 }
 .contact-info p i {
     margin-right: 10px;
@@ -258,7 +270,7 @@ h2.contact span {
 }
 form.contact {
     width: 85%;
-    margin-top: 32px;
+    margin-top: 60px;
     align-self: center;
     justify-self: center;
     background-color: rgba(32, 5, 70, .08);
@@ -271,7 +283,8 @@ form.contact {
 
 .contact-social {
     display: flex;
-    margin-top: -18px;
+    margin-top: -20px;
+    margin-left: -20px;
     font-size: 19px;
     color: rgb(32, 5, 70);
 }
@@ -457,11 +470,12 @@ h2.project-title span {
     }
 }
 div.square {
-    height: 15rem;
-    width: 190px;
+    height: 100%;
+    width: 80%;
+    border-radius: 50%;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 50px;
+    left: -40%;
     z-index: -99;
     animation-name: animate;
     animation-duration: 2s;
@@ -559,11 +573,7 @@ nav {
         display: inline-flex;
         list-style: none;
     }
-    @media only screen and (min-width: 1000px) {
-        div.nav ul li a {
-            font-size: 20px;
-        }
-    }
+
     #bars, #times, #menu {
         display: none;
     }
@@ -573,8 +583,13 @@ nav {
         font-weight: 700;
         padding: 3px;
         transition: .4s;
-        font-siz e: 20px;
+        font-size: 15px;
         font-family: 'poppins', Arial, Helvetica, sans-serif;
+    }
+    @media only screen and (min-width: 1000px) {
+        div.nav ul li a {
+            font-size: 20px;
+        }
     }
     div.nav ul li a:hover {
         border-radius: 3px;
@@ -583,53 +598,84 @@ nav {
     span.greet {
         font-size: 35px;
     }
+    p.intro1 {
+        margin-bottom: 10%;
+        font-size: 27px;
+        line-height: 60px;
+    }
     @media only screen and (min-width: 1000px) {
         span.name {
             font-size: 80px;
         }
     }    
     @media only screen and (max-width: 1000px) {
+            div.nav ul li a {
+                font-size: 18px;
+            }
             span.name {
-                
                 font-size: 65px;
             }  
+            span.greet {
+                font-size: 29px;
+            }
+            p.intro1 {
+                font-size: 23px;
+            }
     }
-    p.intro1 {
-        margin-bottom: 10%;
-        font-size: 27px;
-        line-height: 60px;
-    }
-    div.square {
+    
+/*    div.squ are {
         height: 50%;
         width: 30%;
-    }
+    }*/
     div.about {
         margin: 0px;
-        width: 50%;
+        width: 100%;
         float: left;
         margin-right: 15px;
     }
     div.about img{
         display: none;
     }
+    h2.about {
+        font-size: 40px;
+    }
+    p.about {
+        width: 80%;
+        line-height: 40px;
+        font-size: 18px;
+    }
     .about-container {
-        display: flex;
-        flex-direction: row;
-        margin-top: 11%;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: start;
+        margin-top: 10%;
+        background-color:  rgb(250, 243, 252);
+        padding: 6%;  
     }
-    img.image {
-        width: 50%;
-        height: 30em;
-        margin: 10px;
-        display: flex;
-        border: 2px dashed rgb(32, 5, 70);
-        border-radius: 7px;
+  
+    .about-wrapper {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
     }
+    h2.about-title {
+        grid-column: 1 / -1;
+        color: rgb(32, 5, 70);
+        font-weight: 900;
+        font-family: "ubuntu";
+        font-size: 36px;
+        text-align: left;
+        text-decoration: underline;
+    }
+    h2.about-title span {
+        padding: 1px;
+        border-bottom: 2px solid rgb(32, 5, 70);
+    }
+
     .skills-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
         align-items: start;
         margin: 4px;
         margin-top: 10%;
@@ -660,7 +706,7 @@ nav {
         color: rgb(32, 5, 70);
         font-weight: 900;
         font-family: "ubuntu";
-        font-size: 30px;
+        font-size: 36px;
         text-align: left;
         text-decoration: underline;
     }
@@ -711,7 +757,7 @@ nav {
         color: rgb(32, 5, 70);
         font-weight: 900;
         font-family: "ubuntu";
-        font-size: 30px;
+        font-size: 40x;
         text-align: left;
         text-decoration: underline;
     }
@@ -769,6 +815,7 @@ nav {
     .contact-info {
         text-align: left;
         margin-left: 0px;
+        width: 85%;
     }
 
     .contact-social {
@@ -785,6 +832,7 @@ nav {
     .contact-social a {
         margin-top: 16px;
         display: flex;
+        width: 35%;
         text-decoration: none;
         color: rgb(32, 5, 70);
     }
@@ -793,13 +841,13 @@ nav {
         color: rgb(32, 5, 70);
         font-weight: 900;
         font-family: "ubuntu";
-        font-size: 30px;
+        font-size: 40px;
         text-align: left;
         text-decoration: underline;
     }
     .contact-info p {
         color: rgb(32, 5, 70);
-        font-size: 20px;
+        font-size: 18px;
     }
     .contact-info p i {
         margin-right: 10px;
@@ -813,6 +861,8 @@ nav {
     .contact-social a label {
         display: flex;
         margin-left: 10px;
+        cursor: pointer;
+        color: rgb(32, 5, 70);
     }
 
 }
