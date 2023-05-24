@@ -9,12 +9,14 @@ document.getElementById("times").onclick = function() {
 
 window.onscroll = () => {
   document.querySelector('#to-top').style.display = "block";
-  document.querySelector('#header').style.boxshadow = "0px 0px 1px 1px rgba(156, 151, 151, 0.479)";
 };
-// const body = document.querySelector('.body');
-// body.addEventListener('click', () => {
-//   menu.classList.remove('active'); 
-// });
+
+function theme() {
+  document.getElementById('body').classList.toggle('mode');
+  document.getElementById('name').classList.toggle('mode');
+  document.getElementById('greet').classList.toggle('mode');
+}
+
 
 const menu = document.querySelector('.menu');
 const links = document.querySelectorAll('.menu a');
@@ -57,8 +59,3 @@ document.querySelector("form").addEventListener("submit", function(event) {
     event.preventDefault();
   }
 });
-// window.addEventListener('load', function() {
-//   var aboutContainer = document.querySelector('.about').offsetHeight;
-//   var image = document.querySelector('.image');
-//   image.style.height = aboutContainer + 'px';
-// });

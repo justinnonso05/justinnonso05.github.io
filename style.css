@@ -1,9 +1,24 @@
 /*  import google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&family=Kanit:wght@400;500;900&display=swap');
 
 html {
     scroll-behavior: smooth;
 }
+
+
+/*dark/light modes stylings*/
+
+body.mode {
+    background-color: rgb(19, 0, 34);
+    transition: .5s;
+}
+span.name.mode {
+    color: rgb(221, 179, 255);
+}
+span.greet.mode {
+    color: rgb(241, 223, 255);
+}
+
 body {
     overflow-y: scroll;
     margin: 0px;
@@ -49,6 +64,16 @@ div.menu.active {
     cursor: pointer;
     margin-top: 2px;
 }
+
+#adjust {
+    position: absolute;
+    right: 60px;
+    font-size: 26px;
+    color: rgb(50, 11, 104);
+    cursor: pointer;
+    margin-top: 2px;
+}
+
 #bars.active {
     display: none;
 }
@@ -103,13 +128,14 @@ div.menu li ul {
     margin: 0px;
 }
 label.logo {
-    font-family: "poppins";
+    font-family: "kanit";
     font-weight: 800;
     font-size: 26px;
     position: absolute;
     left: 10px;
     margin-left: 20px;
     color: rgb(32, 5, 70);
+    letter-spacing: 2px;
 }
 
 header {
@@ -143,7 +169,7 @@ header:before {
 div.intro {
     height: 100vh;
     display: flex;
-    margin-top: 10%;
+    margin-top: 0%;
     padding-left: 6%;
     margin-right: 6%;
     justify-content: center;
@@ -154,10 +180,15 @@ div.intro {
     background-color: rgb(32, 5, 70);
     padding: 10px;
     font-size: 14px;
+    transition: .5s;
+    border: 2px;
     border-radius: 5px;
     font-family: "poppins", Arial, Helvetica, sans-serif;
     text-decoration: none;
-    margin-top: 50px;
+    margin-top: 10%;
+}
+#projects:hover {
+    background-color: rgba(32, 5, 70, 0.6);
 }
 #projects i {
     color: white;
@@ -168,25 +199,27 @@ span.greet {
 }
 span.name {
     color: rgb(32, 5, 70);
-    font-family: "arial black";
+    font-family: "kanit";
     font-size: 50px;
     font-weight: 900;
+    letter-spacing: 3px;
 }
 
 p.intro1 {
-    margin-bottom: 10%;
+    margin-bottom: 20%;
     line-height: 40px;
 }
 p.intro {
+    margin-top: 0;
     line-height: 60px;
-    padding-top: 40px;
+    margin-bottom: 0px;
 }
 /* About section */
 .about-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-items: start;
-    margin-top: 10%;
+/*    margin-top: 10%;*/
     background-color: rgb(250, 243, 252);
     box-shadow: 0px 0px 1px 1px rgba(124, 118, 118, 0.247);
     padding: 6%;  
@@ -470,7 +503,7 @@ h2.project-title span {
     }
 }
 div.square {
-    height: 100%;
+    height: 93.5%;
     width: 80%;
     border-radius: 50%;
     position: absolute;
@@ -586,10 +619,21 @@ nav {
         font-size: 15px;
         font-family: 'poppins', Arial, Helvetica, sans-serif;
     }
+    #adjust {
+        display: none;
+    }
+
     @media only screen and (min-width: 1000px) {
         div.nav ul li a {
             font-size: 20px;
         }
+    }
+    div.nav ul li i {
+        color: rgb(32, 5, 70);
+        font-weight: 700;
+        padding: 3px;
+        cursor: pointer;
+        font-size: 22px;
     }
     div.nav ul li a:hover {
         border-radius: 3px;
@@ -599,9 +643,13 @@ nav {
         font-size: 35px;
     }
     p.intro1 {
-        margin-bottom: 10%;
+        margin-bottom: 5%;
+        margin-top: 0px;
         font-size: 27px;
         line-height: 60px;
+    }
+    p.intro {
+        margin-top: 6vh;
     }
     @media only screen and (min-width: 1000px) {
         span.name {
@@ -614,12 +662,22 @@ nav {
             }
             span.name {
                 font-size: 65px;
+            }
+            div.nav ul li i {
+                color: rgb(32, 5, 70);
+                font-weight: 700;
+                padding: 3px;
+                cursor: pointer;
+                font-size: 20px;
             }  
             span.greet {
                 font-size: 29px;
             }
             p.intro1 {
                 font-size: 23px;
+            }
+            p.intro {
+                margin-top: 0px;
             }
     }
     
@@ -648,7 +706,7 @@ nav {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         align-items: start;
-        margin-top: 10%;
+/*        margin-top: 10%;*/
         background-color:  rgb(250, 243, 252);
         padding: 6%;  
     }
