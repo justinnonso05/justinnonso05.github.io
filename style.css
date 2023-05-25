@@ -535,8 +535,8 @@ div.square {
         color: rgba(0, 0, 0, 0);
         background: transparent;
         font-size: 15px;
-        z-index: -1;
         display: none;
+        
     }
 }
 
