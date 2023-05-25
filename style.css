@@ -515,7 +515,7 @@ div.square {
     animation-timing-function: ease;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    animation-delay: 4s;
+    animation-delay: 5s;
 
 }
 @keyframes load {
@@ -536,7 +536,8 @@ div.square {
         background: transparent;
         font-size: 15px;
         display: none;
-        
+        4
+        z-index: -6;
     }
 }
 
