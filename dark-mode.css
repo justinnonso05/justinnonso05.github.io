@@ -1,0 +1,63 @@
+body {
+  background-color: rgb(5, 0, 15);
+}
+
+p, label, i, h2 {
+    color: rgb(227, 224, 231);
+}
+
+span.name {
+  color: rgb(227, 224, 231);
+}
+
+span.greet {
+  color: rgba(227, 224, 231, .8);
+}
+
+label.logo {
+  color: rgb(227, 224, 231);
+}
+
+header:before {
+  box-shadow: inset 0 0 2000px rgb(15, 0, 44);
+  background: rgb(5, 0, 15);
+}
+
+header {
+  background: rgb(5, 0, 15);
+}
+
+.slider:before {
+  background-color: rgb(15, 0, 44);
+}
+
+#bars, #times {
+  color: rgb(227, 224, 231);
+}
+
+div.menu {
+  background-color: rgba(5, 0, 15, .966);
+}
+
+div.menu li a {
+  color: rgb(227, 224, 231);
+}
+@keyframes load {
+    0% {
+        background: rgb(5, 0, 15);
+        font-size: 15px;
+    }
+    20% {
+        background: rgb(5, 0, 15);
+        font-size: 30px;
+        color: rgb(227, 224, 231);
+    }
+    40% {
+        font-size: 15px;
+    }
+    100% {
+        color: rgba(0, 0, 0, 0);
+        font-size: 0px;
+        left: -100%;
+    }
+}

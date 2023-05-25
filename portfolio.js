@@ -11,13 +11,6 @@ window.onscroll = () => {
   document.querySelector('#to-top').style.display = "block";
 };
 
-function theme() {
-  document.getElementById('body').classList.toggle('mode');
-  document.getElementById('name').classList.toggle('mode');
-  document.getElementById('greet').classList.toggle('mode');
-}
-
-
 const menu = document.querySelector('.menu');
 const links = document.querySelectorAll('.menu a');
 
@@ -59,3 +52,28 @@ document.querySelector("form").addEventListener("submit", function(event) {
     event.preventDefault();
   }
 });
+const toggleSwitch = document.querySelector('.toggle-switch');
+const darkModeStylesheet = document.querySelector('#dark-mode-stylesheet');
+const isDarkMode = localStorage.getItem('isDarkMode');
+
+// Set the default style based on the initial state of the toggle switch
+if (isDarkMode === 'true') {
+  toggleSwitch.checked = true;
+}
+
+toggleSwitch.addEventListener('change', function() {
+  if (this.checked) {
+    darkModeStylesheet.setAttribute('href', 'dark-mode.css');
+    localStorage.setItem('isDarkMode', 'true');
+  } else {
+    darkModeStylesheet.setAttribute('href', 'light-mode.css');
+    localStorage.setItem('isDarkMode', 'false');
+  }
+});
+
+// Apply the appropriate style on page load
+if (toggleSwitch.checked) {
+  darkModeStylesheet.setAttribute('href', 'dark-mode.css');
+} else {
+  darkModeStylesheet.setAttribute('href', 'light-mode.css');
+}
