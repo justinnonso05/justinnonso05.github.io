@@ -74,6 +74,8 @@ toggleSwitch.addEventListener('change', function() {
 // Apply the appropriate style on page load
 if (toggleSwitch.checked) {
   darkModeStylesheet.setAttribute('href', 'dark-mode.css');
+  document.querySelector('.content-hidden').style.display = 'block';
 } else {
   darkModeStylesheet.setAttribute('href', 'light-mode.css');
+  document.querySelector('.content-hidden').style.display = 'block';
 }
