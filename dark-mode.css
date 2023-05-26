@@ -5,6 +5,11 @@ body {
 p, label, i, h2 {
     color: rgb(227, 224, 231);
 }
+.content-hidden {
+    display: none;
+}
+
+
 
 span.name {
   color: rgb(227, 224, 231);
