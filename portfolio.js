@@ -65,17 +65,19 @@ toggleSwitch.addEventListener('change', function() {
   if (this.checked) {
     darkModeStylesheet.setAttribute('href', 'dark-mode.css');
     localStorage.setItem('isDarkMode', 'true');
+    //document.body.style.backgroundColor = "rgb(5, 0, 15)"
   } else {
     darkModeStylesheet.setAttribute('href', 'light-mode.css');
     localStorage.setItem('isDarkMode', 'false');
+    //document.body.style.backgroundColor = "rgb(227, 224, 231)"
   }
 });
 
 // Apply the appropriate style on page load
 if (toggleSwitch.checked) {
   darkModeStylesheet.setAttribute('href', 'dark-mode.css');
-  document.querySelector('.content-hidden').style.display = 'block';
+  document.querySelector('.content-hidden').style.display = "block";
 } else {
   darkModeStylesheet.setAttribute('href', 'light-mode.css');
-  document.querySelector('.content-hidden').style.display = 'block';
+  document.querySelector('.content-hidden').style.display = "block";
 }

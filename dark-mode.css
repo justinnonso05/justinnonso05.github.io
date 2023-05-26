@@ -2,14 +2,14 @@ body {
   background-color: rgb(5, 0, 15);
 }
 
-p, label, i, h2 {
-    color: rgb(227, 224, 231);
-}
+
 .content-hidden {
     display: none;
 }
 
-
+p, label, i, h2 {
+    color: rgb(227, 224, 231);
+}
 
 span.name {
   color: rgb(227, 224, 231);
@@ -159,6 +159,10 @@ button.submit:hover {
 div.nav ul li a {
   color: rgb(227, 224, 231);
 }
+
+div.nav ul li a:hover {
+  background-color: rgba(227, 224, 231, .1);
+}
 div.footer div.social a i {
     color: rgb(227, 224, 231);
 
@@ -174,6 +178,7 @@ div.footer div.social a i {
         color: rgb(227, 224, 231);
     }
     40% {
+      background: rgb(5, 0, 15);
         font-size: 15px;
     }
     100% {
