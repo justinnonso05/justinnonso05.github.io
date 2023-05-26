@@ -105,15 +105,6 @@ div.menu.active {
     margin-top: 2px;
 }
 
-#adjust {
-    position: absolute;
-    right: 60px;
-    font-size: 26px;
-    color: rgb(50, 11, 104);
-    cursor: pointer;
-    margin-top: 2px;
-}
-
 #bars.active {
     display: none;
 }
@@ -232,6 +223,7 @@ div.intro {
 }
 #projects i {
     color: white;
+    padding-left: 4px;
 }
 span.greet {
     color: rgb(56, 19, 107);
@@ -286,6 +278,8 @@ h2.about-title span {
 }
 
 img.me {
+    align-self: center;
+    justify-self: center;
     text-align: center;
     width: 100%;
     margin-top: 15px;
@@ -349,6 +343,7 @@ form.contact {
     justify-self: center;
     background-color: rgba(32, 5, 70, .08);
     border-radius: 5px;
+    box-shadow: 0px 0px 1px 1px rgba(32, 5, 70, 0.5);
     padding: 20px;
 }
 .contact-info {
@@ -396,16 +391,20 @@ textarea.message {
 button.submit {
     background: rgb(32, 5, 70);
     outline: none;
-    border: 1px solid rgb(32, 5, 70);
+    border: none;
     width: 95%;
     padding: .4em;
     color: white;
     margin-top: 1.3em;
+    transition: .5s;
     margin-bottom: 1.4em;
     font-size: 1.3em;
     font-weight: 800;
     border-radius: 5px;
     cursor: pointer;
+}
+button.submit:hover {
+    background-color: rgba(32, 5, 70, 0.87);
 }
 form.contact a {
     text-decoration: none;
@@ -527,9 +526,13 @@ h2.project-title span {
     border-radius: 5px;
     color: white;
     padding: 10px;
+    transition: .5s;
     text-decoration: none;
     width: 65%;
     background-color: rgb(32, 5, 70);
+}
+.view-all:hover {
+    background-color: rgba(32, 5, 70, 0.6);
 }
 
 

@@ -25,6 +25,7 @@ header:before {
 
 header {
   background: rgb(5, 0, 15);
+  box-shadow: 0px 0px 1px 1px rgba(227, 224, 231, .1);
 }
 
 .slider:before {
@@ -41,6 +42,121 @@ div.menu {
 
 div.menu li a {
   color: rgb(227, 224, 231);
+}
+
+#projects {
+  color: rgb(227, 224, 231);
+  background-color: rgba(227, 224, 231, .1);
+}
+
+#to-top {
+  background-color: rgba(227, 224, 231, .1);
+}
+
+.about-container, .project-container, .skills-container, .contact-container {
+  background-color: rgba(33, 0, 100, .12);
+}
+
+h2.about-title, h2.skill-heading, h2.project-title, h2.contact {
+  color: rgb(227, 224, 231);
+}
+
+h2.about-title span, h2.skill-heading span, h2.project-title span, h2.contact span {
+  border-bottom: 2px solid rgb(227, 224, 231);
+}
+
+img.me {
+  border: 2px dashed rgb(227, 224, 231);
+}
+
+.skill {
+  box-shadow: 0px 0px 2px 2px rgba(227, 224, 231, .4);
+}
+
+.project {
+  border: 1px solid rgba(227, 224, 231, .6);
+}
+
+.view-all {
+  color: rgb(227, 224, 231);
+  background-color: rgba(227, 224, 231, .1);
+}
+
+.view-all:hover {
+    background-color: rgba(32, 5, 70, 0.6);
+}
+
+.project:hover {
+    box-shadow: 0px 0px 2px 2px rgba(227, 224, 231, .4);
+}
+
+.project-container .projects-wrapper .project a {
+  color: rgb(227, 224, 231);
+}
+
+.contact-info p {
+    color: rgba(227, 224, 231, .9);
+}
+
+.contact-info p i {
+    color: rgba(227, 224, 231, .9);
+}
+
+.contact-social a i {
+    color: rgba(227, 224, 231, .9);
+}
+
+.contact-social a label {
+    color: rgba(227, 224, 231, .9);
+}
+
+.contact-info h3 {
+    color: rgb(227, 224, 231);
+}
+
+form.contact {
+  background-color: rgba(5, 0, 15, .966);
+  box-shadow: 0px 0px 1px 1px rgba(227, 224, 231, .3);
+}
+
+form.contact input {
+  border: 1px solid rgb(227, 224, 231);
+  color: rgb(227, 224, 231);
+}
+
+textarea.message {
+  border: 1px solid rgb(227, 224, 231);
+  color: rgb(227, 224, 231);
+}
+
+form.contact a {
+  color: rgb(227, 224, 231);
+}
+
+button.submit {
+  border: none;
+  color: rgb(227, 224, 231);
+  background-color: rgba(227, 224, 231, .1);
+}
+
+label.whatsapp {
+  color: gray;
+}
+
+button.submit:hover {
+  background-color: rgba(32, 5, 70, 0.6);
+}
+
+::placeholder {
+  color: rgba(227, 224, 231, .7);
+}
+
+div.nav ul li a {
+  color: rgb(227, 224, 231);
+}
+div.footer div.social a i {
+    color: rgb(227, 224, 231);
+
 }
 @keyframes load {
     0% {
@@ -59,5 +175,14 @@ div.menu li a {
         color: rgba(0, 0, 0, 0);
         font-size: 0px;
         left: -100%;
+    }
+}
+
+@keyframes animate {
+    0% {
+        background: transparent;
+    }
+    100% {
+        background: rgba(33, 0, 100, .12);
     }
 }
