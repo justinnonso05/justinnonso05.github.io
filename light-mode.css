@@ -26,10 +26,10 @@ p, label, i, h2 {
 }
 
 /* toggle switch */
-body {
-  background-color: white;
-}
 
+.content-hidden {
+    display: none;
+}
 .switch {
   position: absolute;
   display: inline-block;
