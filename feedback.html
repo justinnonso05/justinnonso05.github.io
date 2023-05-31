@@ -1,0 +1,121 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta property="og:title" content="Justin Chinonso">
+    <meta property="og:description" content="Justin Chinonso">
+    <meta property="og:image" content="juston.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Chinonso</title>
+    <link rel="icon" type="image/x-icon" href="img/juston.png">
+    <link rel="stylesheet" href="light-mode.css" id="dark-mode-style sheet">
+    <link rel="stylesheet" href="dark-mode.css" id="dark-mode-stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="menu" id="menu">
+      <i class="fa fa-times" class="times" id="times"></i>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="index.html">Contact</a></li>
+        <li><a href="#">Support Me</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </div>
+    <header id="header">
+      <label class="logo">JUSTON</label><i class="fa fa-bars" class="bars" id="bars" onclick="show()"></i>
+      <label class="switch" title="Toggle light/dark mode">
+        <input type="checkbox" class="toggle-switch">
+        <span class="slider round"></span>
+      </label>
+      <nav>
+        <div class="nav" id="nav">
+        <ul>  
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="index.html">Contact</a></li>
+          <li><a href="#">Support Me</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+        </div>
+      </nav>
+    </header>
+    <a href="#" id="to-top"><i class="fa fa-angle-up"></i></a>
+    <style>
+      #to-top {
+        background: transparent;
+        display: none;
+        z-index: -9999;
+      }
+    </style>
+    <div class="feedback-container">
+      <div class="feedback-wrapper">
+        <h2 class="feedback"><span>Feedback</span></h2>
+        <p>Your opinion is valued. Please take a moment to provide me with your feedback.<br>Your feedback helps me to improve<hr></p>
+        <form class="feedback" method="POST" netlify name="portfolio-feedback">
+          <div class="input-con">
+            <label class="above" for="name">Name:</label><br>
+            <input class="name" name ="name" id="name" type="text" placeholder="Name"><br><label class="below" for="name">*Leave empty to submit an anonymous feedback</label><br><br>
+            <label class="above" for="email">Email:</label><br>
+            <input class="email" name ="email" id="email" type="email" placeholder="Email"><br><label class="below" for="email">*Leave empty to submit an anonymous feedback</label><br><br>
+            <label class="above" for="message">General Feedback for my website:</label><br>
+            <textarea class="message" name ="General-Feedback" id="message" placeholder="feedback..." cols="26" rows="4" required></textarea><br>
+            <label class="above" for="feedback">Do you have any suggestion to make my website better?:</label><br>
+            <textarea class="message" name ="Suggestion-feedback" id="feedback" cols="26" rows="4"></textarea>
+          </div>
+          <div class="rate-container">
+            <h3>Ratings</h3>
+            <div class="rate-wrapper">
+              <label>
+                Design:<br>
+                <select name="Design-Option" id="optionSelect" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="very-bad">Very Bad</option>
+                  <option value="bad">Bad</option>
+                  <option value="fair">Fair</option>
+                  <option value="good">Good</option>
+                  <option value="very-good">Very Good</option>
+                </select>
+              </label>
+              <label>
+                Performance:<br>
+                <select name="Uasbility-Option" id="optionSelect" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="very-bad">Very Bad</option>
+                  <option value="bad">Bad</option>
+                  <option value="fair">Fair</option>
+                  <option value="good">Good</option>
+                  <option value="very-good">Very Good</option>
+                </select>
+              </label>
+              <label>
+                Content:<br>
+                <select name="Content-Option" id="optionSelect" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="very-bad">Very Bad</option>
+                  <option value="bad">Bad</option>
+                  <option value="fair">Fair</option>
+                  <option value="good">Good</option>
+                  <option value="very-good">Very Good</option>
+                </select>
+              </label>
+              <label>
+                Overall Experience:<br>
+                <select name="Experience-Option" id="optionSelect" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="very-bad">Very Bad</option>
+                  <option value="bad">Bad</option>
+                  <option value="fair">Fair</option>
+                  <option value="good">Good</option>
+                  <option value="very-good">Very Good</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <button class="submit" id="fback" type="submit">Send Feedback</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="portfolio.js"></script>
+</html>

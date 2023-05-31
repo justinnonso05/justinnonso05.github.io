@@ -81,3 +81,9 @@ if (toggleSwitch.checked) {
   darkModeStylesheet.setAttribute('href', 'light-mode.css');
   document.querySelector('.content-hidden').style.display = "block";
 }
+
+window.addEventListener('load', function() {
+  var options = document.getElementById('optionSelect');
+  options.selectedIndex = 0; 
+});
+      

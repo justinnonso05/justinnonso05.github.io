@@ -57,16 +57,31 @@ div.menu li a {
 #to-top {
   background-color: rgba(227, 224, 231, .1);
 }
-
-.about-container, .project-container, .skills-container, .contact-container {
+hr {
+  background-color: white;
+  color: white;
+}
+.rate-wrapper select {
+    background-color: rgb(5, 0, 15);
+    border: 2px solid rgb(227, 224, 231);
+    color: white;
+}
+.rate-container h3 {
+  color: rgb(227, 224, 231);
+}
+form.feedback input {
+    border: 2px solid rgb(227, 224, 231);
+    color: white;
+}
+.about-container, .project-container, .skills-container, .contact-container, .feedback-container {
   background-color: rgba(33, 0, 100, .12);
 }
 
-h2.about-title, h2.skill-heading, h2.project-title, h2.contact {
+h2.about-title, h2.skill-heading, h2.project-title, h2.contact, h2.feedback {
   color: rgb(227, 224, 231);
 }
 
-h2.about-title span, h2.skill-heading span, h2.project-title span, h2.contact span {
+h2.about-title span, h2.skill-heading span, h2.project-title span, h2.contact span, h2.feedback span {
   border-bottom: 2px solid rgb(227, 224, 231);
 }
 
@@ -125,12 +140,12 @@ form.contact {
 }
 
 form.contact input {
-  border: 1px solid rgb(227, 224, 231);
+  border: 2px solid rgb(227, 224, 231);
   color: rgb(227, 224, 231);
 }
 
 textarea.message {
-  border: 1px solid rgb(227, 224, 231);
+  border: 2px solid rgb(227, 224, 231);
   color: rgb(227, 224, 231);
 }
 
