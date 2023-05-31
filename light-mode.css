@@ -728,7 +728,6 @@ div.square {
     }
 }
 
-
 div.cover {
     position: fixed;
     top: 0px;
@@ -751,6 +750,7 @@ div.cover {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+
 .image {
     display: none;
 }

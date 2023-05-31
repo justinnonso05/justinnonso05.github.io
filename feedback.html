@@ -45,7 +45,8 @@
       #to-top {
         background: transparent;
         display: none;
-        z-index: -9999;
+        z-index: -99999;
+        left: -9999px;
       }
     </style>
     <div class="feedback-container">
@@ -55,10 +56,10 @@
         <form class="feedback" method="POST" netlify name="portfolio-feedback">
           <div class="input-con">
             <label class="above" for="name">Name:</label><br>
-            <input class="name" name ="name" id="name" type="text" placeholder="Name"><br><label class="below" for="name">*Leave empty to submit an anonymous feedback</label><br><br>
+            <input class="name" name ="name" id="f_name" type="text" placeholder="Name"><br><label class="below" for="name">*Leave empty to submit an anonymous feedback</label><br><br>
             <label class="above" for="email">Email:</label><br>
-            <input class="email" name ="email" id="email" type="email" placeholder="Email"><br><label class="below" for="email">*Leave empty to submit an anonymous feedback</label><br><br>
-            <label class="above" for="message">General Feedback for my website:</label><br>
+            <input class="email" name ="email" id="f_email" type="email" placeholder="Email"><br><label class="below" for="email">*Leave empty to submit an anonymous feedback</label><br><br>
+            <label class="above" for="message">General Feedback about my website:</label><br>
             <textarea class="message" name ="General-Feedback" id="message" placeholder="feedback..." cols="26" rows="4" required></textarea><br>
             <label class="above" for="feedback">Do you have any suggestion to make my website better?:</label><br>
             <textarea class="message" name ="Suggestion-feedback" id="feedback" cols="26" rows="4"></textarea>
