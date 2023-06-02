@@ -133,7 +133,7 @@ div.menu.active {
     font-size: 30px;
     padding-left: 10px;
     padding-right: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: .5s;
     background-color: rgba(59, 19, 116, 0.677);
 }
