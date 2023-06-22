@@ -10,9 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&family=Kanit:wght@400;500;900&display=swap');
+
     * {
       scrollbar-width: thin;
       scrollbar-color: #2e0854 #f1f1f1;
+      font-family: 'poppins';
     }
     html {
       scroll-behavior: smooth;
@@ -98,8 +101,21 @@
   <div class="back">
     <a class="back" href="index.html"><i class="fa fa-arrow-left"></i>Back to portfolio</a>
   </div>
-  <div class="container">  
-    <div>
+  <div class="container">
+    <div class="project">
+      <a href="https://justinnonso05.pythonanywhere.com"><img alt="image" height="140px" src="img/Todo_1.png"></a><br>
+      <p>Todo list Application<br>Manage your tasks with Todo list apllication</p>
+      <p>Made with Python(Django)</p>
+      <p><a href="https://justinnonso05.pythonanywhere.com" target="_blank">View Live</a></p>
+      <p class="git"><a href="https://github.com/justinnonso05/Todo">Github Repo</a></p>
+    </div>
+    <div class="project">
+      <a href="https://justondev.netlify.app"><img alt="image" height="140px" src="img/portfolio.png"></a><br>
+      <p>My Portfolio website</p>
+      <p><a href="https://justondev.netlify.app" target="_blank">View Live</a></p>
+      <p class="git"><a href="https://github.com/justinnonso05/justinnonso05.github.io">Github Repo</a></p>
+    </div>  
+    <div id="tictactoe">
       <img src="img/tictactoe.PNG" alt="image" height="140px"><br>
       <p>Tictactoe Game<br>To use this app, download the zip file below and extract the tictactoe folder from it. Run the "tictactoe.exe" file to start the application.<br> Remember! all the files present with in the folder with the tictactoe application file must be present for the app to run. Works on only windows 64 bits system</p>
       <p><a href="zip/Calculator.zip">Download Zip</a></p>
@@ -114,14 +130,14 @@
     <div>
       <img src="img/webcalc.jpg" alt="image" height="140px"><br>
       <p>Simple web calculator. Performs simple arithmetic operations</p>
-      <p><a href="https://justoncalc.netlify.app">View live</a></p>
+      <p><a href="https://justoncalc.netlify.app" target="_blank">View live</a></p>
       <p class="git"><a href="https://github.com/justinnonso05/calculator">Github Repo</a></p>
     </div>
-    <div>
+    <div id="securekey">
       <img src="img/secure.png" alt="image" height="140px"><br>
       <p>Password Manager Application.<br>To use this app, download the zip file below and extract the securekey folder from it. Run the "SecureKey.exe" file to start the application.<br> Remember! all the files present with in the folder with the securekey application file must be present for the app to run. Works on only windows 64 bits system</p>
       <p><a href="zip/SecureKey.zip" download>Download Zip</a></p>
-      <p class="git"><a href="https://github.com/justinnonso05/password-manager">Github Repo</a></p>
+      <p class="git"><a href="https://github.com/justinnonso05/password_manager">Github Repo</a></p>
     </div>
   </div>
   </body>
