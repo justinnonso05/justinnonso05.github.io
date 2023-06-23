@@ -280,7 +280,7 @@ h2.about-title {
     font-family: "ubuntu";
     font-size: 36px;
     text-align: left;
-    text-decoration: uppercase;
+    text-transform: uppercase;
 }
 h2.about-title span {
     padding: 1px;
@@ -321,7 +321,7 @@ h2.feedback {
     font-size: 27px;
     text-align: left;
     margin-top: -15px;
-    text-decoration: uppercase;
+    text-transform: uppercase;
 }
 h2.feedback span {
     padding: 1px;
@@ -425,7 +425,7 @@ h2.contact {
     font-family: "ubuntu";
     font-size: 30px;
     text-align: left;
-    text-decoration: uppercase;
+    text-transform: uppercase;
 }
 h2.contact span {
     padding: 1px;
@@ -583,7 +583,7 @@ h2.skill-heading {
     font-family: "ubuntu";
     font-size: 24px;
     text-align: left;
-    text-decoration: uppercase;
+    text-transform: uppercase;
 }
 .skills-wrapper {
     grid-column: 1 / -1;
@@ -635,7 +635,7 @@ h2.project-title {
     font-family: "ubuntu";
     font-size: 30px;
     text-align: left;
-    text-decoration: uppercase;
+    text-transform: uppercase;
 }
 .projects-wrapper {
     grid-column: 1 / -1;
