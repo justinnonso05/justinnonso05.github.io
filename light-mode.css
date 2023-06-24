@@ -281,10 +281,11 @@ h2.about-title {
     font-size: 36px;
     text-align: left;
     text-transform: uppercase;
+    text-decoration: underline;
 }
 h2.about-title span {
     padding: 1px;
-    /*border-bottom: 2px solid rgb(32, 5, 70);*/
+    border-bottom: 2px solid rgb(32, 5, 70);
 }
 
 img.me {
@@ -322,10 +323,11 @@ h2.feedback {
     text-align: left;
     margin-top: -15px;
     text-transform: uppercase;
+    text-decoration: underline;
 }
 h2.feedback span {
     padding: 1px;
-    /*border-bottom: 2px solid rgb(32, 5, 70);*/
+    border-bottom: 2px solid rgb(32, 5, 70);
 }
 .feedback-container p {
     text-align: left;
@@ -426,10 +428,11 @@ h2.contact {
     font-size: 30px;
     text-align: left;
     text-transform: uppercase;
+    text-decoration: underline;
 }
 h2.contact span {
     padding: 1px;
-    /*border-bottom: 2px solid rgb(32, 5, 70);*/
+    border-bottom: 2px solid rgb(32, 5, 70);
 }
 .contact-container {
     display: grid;
@@ -584,6 +587,7 @@ h2.skill-heading {
     font-size: 24px;
     text-align: left;
     text-transform: uppercase;
+    text-decoration: underline;
 }
 .skills-wrapper {
     grid-column: 1 / -1;
@@ -593,7 +597,7 @@ h2.skill-heading {
 }
 h2.skill-heading span {
     padding: 1px;
-    /*border-bottom: 2px solid rgb(32, 5, 70);*/
+    border-bottom: 2px solid rgb(32, 5, 70);
 
 }
 .project-container {
@@ -636,6 +640,7 @@ h2.project-title {
     font-size: 30px;
     text-align: left;
     text-transform: uppercase;
+    text-decoration: underline;
 }
 .projects-wrapper {
     grid-column: 1 / -1;
@@ -645,7 +650,7 @@ h2.project-title {
 }
 h2.project-title span {
     padding: 1px;
-    /*border-bottom: 2px solid rgb(32, 5, 70);*/
+    border-bottom: 2px solid rgb(32, 5, 70);
 }
 .project-container .projects-wrapper .project a {
     color: rgb(32, 5, 70);
