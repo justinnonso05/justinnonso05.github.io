@@ -280,7 +280,6 @@ h2.about-title {
     font-family: "ubuntu";
     font-size: 36px;
     text-align: left;
-    text-transform: uppercase;
     text-decoration: underline;
 }
 h2.about-title span {
@@ -322,7 +321,6 @@ h2.feedback {
     font-size: 27px;
     text-align: left;
     margin-top: -15px;
-    text-transform: uppercase;
     text-decoration: underline;
 }
 h2.feedback span {
@@ -427,7 +425,6 @@ h2.contact {
     font-family: "ubuntu";
     font-size: 30px;
     text-align: left;
-    text-transform: uppercase;
     text-decoration: underline;
 }
 h2.contact span {
@@ -586,7 +583,6 @@ h2.skill-heading {
     font-family: "ubuntu";
     font-size: 24px;
     text-align: left;
-    text-transform: uppercase;
     text-decoration: underline;
 }
 .skills-wrapper {
@@ -639,7 +635,6 @@ h2.project-title {
     font-family: "ubuntu";
     font-size: 30px;
     text-align: left;
-    text-transform: uppercase;
     text-decoration: underline;
 }
 .projects-wrapper {
@@ -894,9 +889,9 @@ nav {
     div.about img{
         display: none;
     }
-/*     h2.about {
+    h2.about {
         font-size: 40px;
-    } */
+    }
     p.about {
         width: 80%;
         line-height: 40px;
@@ -922,7 +917,7 @@ nav {
         color: rgb(32, 5, 70);
         font-weight: 900;
         font-family: "ubuntu";
-        font-size: 32px;
+        font-size: 36px;
         text-align: left;
         text-decoration: underline;
     }
@@ -964,7 +959,7 @@ nav {
         color: rgb(32, 5, 70);
         font-weight: 900;
         font-family: "ubuntu";
-        font-size: 29px;
+        font-size: 36px;
         text-align: left;
         text-decoration: underline;
     }
@@ -1015,7 +1010,7 @@ nav {
         color: rgb(32, 5, 70);
         font-weight: 900;
         font-family: "ubuntu";
-        font-size: 32x;
+        font-size: 40x;
         text-align: left;
         text-decoration: underline;
     }
@@ -1120,7 +1115,7 @@ nav {
         color: rgb(32, 5, 70);
         font-weight: 900;
         font-family: "ubuntu";
-        font-size: 32px;
+        font-size: 40px;
         text-align: left;
         text-decoration: underline;
     }
