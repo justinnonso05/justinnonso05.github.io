@@ -1,0 +1,25 @@
+{
+  "background_color": "#ffffff",
+  "description": "Justin Chinonso | Tech enthusiast",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Justin Chinonso",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Justondev",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "categories": [],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "img/juston.png",
+      "type": "image/png",
+      "sizes": "644x414"
+    },
+    {
+      "src": "juston.png"
+    }
+  ],
+  "shortcuts": []
+}
