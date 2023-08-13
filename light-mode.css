@@ -754,7 +754,9 @@ div.cover {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-
+#pro-image {
+    width: 100%;
+}
 .image {
     display: none;
 }
@@ -785,8 +787,16 @@ nav {
 }
 
 /*Media queries start*/
-
+@media only screen and (max-width: 770px) {
+    ::-webkit-scrollbar, ::-moz-scrollbar {
+        display: none;
+    }
+    #pro-image {
+        width: 100%;
+    }
+}
 @media only screen and (min-width: 770px) {
+    
     nav {
         display: flex;
         float: right;
@@ -991,6 +1001,9 @@ nav {
     .project-image {
         width: 70%;
     }
+    #pro-image {
+        width: 95%;
+    }
     .project {
         display: flex;
         flex-direction: column;
@@ -1038,7 +1051,7 @@ nav {
         color: white;
         padding: 10px;
         text-decoration: none;
-        width: 65%;
+        width: 35%;
         background-color: rgb(32, 5, 70);
     }
     .feedback-container p {
