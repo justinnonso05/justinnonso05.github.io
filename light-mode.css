@@ -22,7 +22,7 @@ body {
     padding: 0px;
     font-family: "poppins", Arial, Helvetica, sans-serif;
     background-attachment: fixed;
-    background-color: rgb(227, 224, 231);
+    background-color: white;
     /* background: linear-gradient(to right, rgb(198, 199, 201), rgb(205, 208, 212));  */
     /* background: linear-gradient(to right, rgb(10, 11, 12), rgb(15, 16, 19)); */
 }
@@ -30,60 +30,9 @@ body {
     display: none;
 }
 p, label, i, h2 {
-    color: #0f0e0e;
+    color: black;
 }
 
-.content-hidden {
-    display: none;
-}
-/* toggle switch */
-
-.switch {
-  position: absolute;
-  display: inline-block;
-  width: 39px;
-  right: 60px;
-  height: 25px;
-}
-
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgb(50, 11, 104);
-  transition: 0.4s;
-  border-radius: 34px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 17px;
-  width: 17px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  transition: 0.4s;
-  border-radius: 50%;
-  
-}
-
-input:checked + .slider {
-  background-color: rgb(227, 224, 231);
-}
-
-input:checked + .slider:before {
-  transform: translateX(16px);
-}
 
 div.menu {
     position: fixed;
@@ -93,13 +42,14 @@ div.menu {
     padding: 0px;
     margin: 0px;
     height: 100vh;
-    background-color: rgba(200, 187, 218, 0.966);
+    background-color: rgba(0, 0, 0, .8);
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    z-index: 3;
+    z-index: 5;
     transition: ease-in-out, .3s;
+    backdrop-filter: blur(10px);
 }
 div.menu.active {
     left: 0px;
@@ -108,7 +58,7 @@ div.menu.active {
     position: absolute;
     right: 25px;
     font-size: 26px;
-    color: rgb(50, 11, 104);
+    color: white;
     cursor: pointer;
     margin-top: 2px;
 }
@@ -120,7 +70,7 @@ div.menu.active {
     position: absolute;
     right: 25px;
     font-size: 26px;
-    color: rgb(50, 11, 104);
+    color: white;
     top: 14px;
     cursor: pointer;
 }
@@ -131,23 +81,23 @@ div.menu.active {
     right: 20px;
     font-weight: 900;
     font-size: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 10px;
+    padding: 0px 12px;
+    border-radius: 30%;
     transition: .5s;
-    background-color: rgba(59, 19, 116, 0.677);
+    background-color: rgba(0,0,0,.5);
+    backdrop-filter: blur(5px);
 }
 #to-top i {
     font-weight: 900;
     color: white;
 }
 #to-top:hover {
-    background-color: rgb(59, 19, 116);
+    background-color: rgba(0,0,0,.09);
 }
 
 div.menu li a {
     text-decoration: none;
-    color: rgb(32, 5, 70);
+    color: white;
     font-weight: 700;
     font-size: 20px;
     font-family: 'poppins', Arial, Helvetica, sans-serif;
@@ -172,29 +122,28 @@ label.logo {
     font-weight: 800;
     font-size: 26px;
     position: absolute;
-    left: 10px;
+    left: 5px;
     margin-left: 20px;
-    color: rgb(32, 5, 70);
+    color: white;
     letter-spacing: 2px;
 }
 
 header {
     width: 100%;
     height: 50px;
-    box-shadow: 0 0 2px 0 rgba(27, 2, 32, 0.8); 
-    top: 0px;
-    background-color: whitesmoke;
+    background-color: none;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
-    position: fixed;
-    z-index: 2;
-    background: solid;
+    position: relative;
+    z-index: 3;
     overflow: hidden;
 }
-    
-header:before {
+  header * {
+    margin-top: 10px;
+  } 
+/*header:before {
     content: "";
     position: absolute;
     background: solid;
@@ -206,41 +155,59 @@ header:before {
     box-shadow: inset 0 0 2000px rgba(32, 5, 70, .17);
     filter: blur(2px);
     margin: -20px;
+}*/
+div.intro::before {
+    content: "";
+    position: absolute;
+    background: solid;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
 }
 div.intro {
+    position: relative;
+    background-image: url(img/intro2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     display: flex;
-    margin-top: 0%;
+    margin-top: -50px;
     padding-left: 6%;
-    margin-right: 6%;
+    /*margin-right: 6%;*/
     justify-content: center;
     flex-direction: column;
 }
+div.texts {
+    z-index: 2;
+}
 #projects {
     color: whitesmoke;
-    background-color: rgb(32, 5, 70);
-    padding: 10px;
+    background-color: rgba(0,0,0,.9);
+    padding: 15px;
     font-size: 14px;
     transition: .5s;
-    border: 2px;
+    border: 2px solid white;
     border-radius: 5px;
     font-family: "poppins", Arial, Helvetica, sans-serif;
     text-decoration: none;
     margin-top: 10%;
 }
 #projects:hover {
-    background-color: rgba(32, 5, 70, 0.6);
+    background-color: rgba(0,0,0,.4);
 }
 #projects i {
     color: white;
     padding-left: 4px;
 }
 span.greet {
-    color: rgb(56, 19, 107);
+    color: white;
     font-size: 20px;
 }
 span.name {
-    color: rgb(32, 5, 70);
+    color: white;
     font-family: "kanit";
     font-size: 50px;
     font-weight: 900;
@@ -250,6 +217,7 @@ span.name {
 p.intro1 {
     margin-bottom: 20%;
     line-height: 40px;
+    color: white;
 }
 p.intro {
     margin-top: 0;
@@ -262,9 +230,8 @@ p.intro {
     grid-template-columns: repeat(1, 1fr);
     align-items: start;
 /*    margin-top: 10%;*/
-    background-color: rgb(250, 243, 252);
-    box-shadow: 0px 0px 1px 1px rgba(124, 118, 118, 0.247);
-    padding: 6%;  
+    background-color: white;
+    padding: 0% 5%;  
 }
 
 .about-wrapper {
@@ -275,17 +242,18 @@ p.intro {
 }
 h2.about-title {
     grid-column: 1 / -1;
-    color: rgb(32, 5, 70);
+    color: black;
     font-weight: 900;
-    font-family: "ubuntu";
+    font-family: "poppins";
     font-size: 36px;
-    text-align: left;
-    text-decoration: underline;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: -5px
 }
-h2.about-title span {
+/*h2.about-title span {
     padding: 1px;
     border-bottom: 2px solid rgb(32, 5, 70);
-}
+}*/
 
 img.me {
     align-self: center;
@@ -294,8 +262,12 @@ img.me {
     width: 100%;
     margin-top: 15px;
     margin-left: -1px;
-    border: 2px dashed rgb(32, 5, 70);
+    transition: .5s;
     border-radius: 7px;
+}
+img.me:hover {
+    transition: .5s;
+    border: 2px dashed black;
 }
 /*feedback styling*/
 
@@ -420,16 +392,15 @@ form.feedback button {
 
 h2.contact {
     grid-column: 1 / -1;
-    color: rgb(32, 5, 70);
+    color: black;
     font-weight: 900;
-    font-family: "ubuntu";
+    font-family: "poppins";
     font-size: 30px;
-    text-align: left;
-    text-decoration: underline;
+    text-align: center;
 }
-h2.contact span {
+/*h2.contact span {
     padding: 1px;
-    border-bottom: 2px solid rgb(32, 5, 70);
+    border-bottom: 2px solid rgb(32, 5, 70);*/
 }
 .contact-container {
     display: grid;
@@ -439,25 +410,24 @@ h2.contact span {
     justify-content: center;
     text-align: center;
     margin-top: 10%;
-    background-color:  rgb(250, 243, 252);
-    box-shadow: 0px 0px 1px 1px rgba(124, 118, 118, 0.247);
-    padding: 6%;
+    background-color:  white;
+    padding: 5%;
 }
 
 .connect{
     margin-top: 30px;
 }
 .contact-info p {
-    color: rgb(32, 5, 70);
+    color: black;
     font-size: 16px;
 }
 .contact-info p i {
     margin-right: 10px;
-    color: rgb(32, 5, 70);
+    color: black;
     font-size: 24px;
 }
 a.mail {
-    color: rgb(32, 5, 70);
+    color: black;
     text-decoration: none;
 }
 .contact-social a label {
@@ -468,19 +438,30 @@ a.mail {
     display: grid;
     justify-content: center; 
 }
+
 form.contact {
-    width: 85%;
+    width: 93%;
     overflow: hidden;
+    text-align: center;
     margin-top: 60px;
+    align-content: center
     align-self: center;
     justify-self: center;
-    background-color: rgba(32, 5, 70, .08);
+    background-image: url(img/intro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 5px;
     box-shadow: 0px 0px 1px 1px rgba(32, 5, 70, 0.5);
-    padding: 20px;
+    margin-bottom: 15px;
+    padding: 10px 5px;
+}
+
+form.contact p {
+    color: white;
 }
 .contact-info {
     text-align: left;
+    padding: 5%;
 }
 
 .contact-social {
@@ -491,7 +472,7 @@ form.contact {
     color: rgb(32, 5, 70);
 }
 .contact-social a i {
-    color: rgb(32, 5, 70);
+    color: black;
     font-size: 30px;
     margin-left: 20px;
 }
@@ -499,30 +480,31 @@ form.contact {
     text-align: left;
     margin-top: 16px;
     text-decoration: none;
-    color: rgb(32, 5, 70);
+    color: black;
 }
 form.contact input {
     margin-top: 1.4em;
-    width: 85%;
+    width: 90%;
+    border: transparent;
     color: black;
     outline: none;
-    background: none;
+    background: rgba(255,255,255, .6);
     border-radius: 6px;
-    border: 1.4px solid rgb(32, 5, 70);
+    /*border: 1.4px solid rgb(32, 5, 70);*/
     padding: 9px;
 }
 textarea.message {
     margin-top: 1.4em;
-    width: 87%;
+    width: 92%;
     color: black;
-    background: none;
     outline: none;
+    border: transparent;
     border-radius: 6px;
-    border: 1.4px solid rgb(32, 5, 70);
+    background: rgba(255,255,255, .6);
     padding: 5px;
 }
 button.submit {
-    background: rgb(32, 5, 70);
+    background: black;
     outline: none;
     border: none;
     width: 90%;
@@ -537,27 +519,25 @@ button.submit {
     cursor: pointer;
 }
 button.submit:hover {
-    background-color: rgba(32, 5, 70, 0.87);
+    background-color: rgba(0,0,0,.8);
 }
 form.contact a {
     text-decoration: none;
-    color: rgb(59, 19, 116);
+    color: white;
 }
 form.contact a:hover {
     text-decoration: underline;
 }
 
 .skills-container {
+    color: white;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     align-items: start;
-    margin: 4px;
     margin-top: 10%;
-    background-color:  rgb(250, 243, 252);
-    padding: 6%;
-    box-shadow: 0px 0px 1px 1px rgba(124, 118, 118, 0.247);
-    border-radius: 10px;   
+    padding: 5%; 
+    background-color: rgba(0, 0, 0, .95);
 }
 .skill-image {
     width: 50px;
@@ -574,45 +554,52 @@ form.contact a:hover {
     border-radius: 5px;
     padding: 15px;
     margin: 10px;
-    box-shadow: 0px 0px 2px 2px rgba(32, 5, 70, .5);
+    background-color: rgba(255,255,255,.04);
+    /*box-shadow: 0px 0px 2px 2px rgba(255,255,255,.2);*/
+}
+.skill label {
+    color: white;
+}
+.skill:hover {
+    padding: 20px;
+    margin: 5px;
+    transition: .5s;
 }
 h2.skill-heading {
     grid-column: 1 / -1;
-    color: rgb(32, 5, 70);
+    color: white;
     font-weight: 900;
-    font-family: "ubuntu";
+    font-family: "poppins";
     font-size: 24px;
-    text-align: left;
-    text-decoration: underline;
+    text-align: center;
 }
 .skills-wrapper {
+    color: white;
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
 }
-h2.skill-heading span {
+/*h2.skill-heading span {
     padding: 1px;
     border-bottom: 2px solid rgb(32, 5, 70);
 
-}
+}*/
 .project-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     align-items: center;
     justify-content: center;
-    margin: 4px;
     text-align: center;
     margin-top: 10%;
-    background-color:  rgb(250, 243, 252);
-    padding: 6%;
-    box-shadow: 0px 0px 1px 1px rgba(124, 118, 118, 0.247);
-    border-radius: 10px;   
+    background-color:  white;
+    padding: 5%;   
+    border-bottom: 2px solid rgba(0,0,0,.4);
 }
 .project-image {
     width: 70%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 .project {
     display: flex;
@@ -623,19 +610,19 @@ h2.skill-heading span {
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
-    border: 1px solid rgb(32, 5, 70);
+    border: 1px solid rgba(0,0,0,.4);
+    transition: .5s;
 }
 .project:hover {
-    box-shadow: 0px 0px 2px 2px rgba(32, 5, 70, .5);
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .7);
 }
 h2.project-title {
     grid-column: 1 / -1;
-    color: rgb(32, 5, 70);
+    color: black;
     font-weight: 900;
-    font-family: "ubuntu";
+    font-family: "poppins";
     font-size: 30px;
-    text-align: left;
-    text-decoration: underline;
+    text-align: center;
 }
 .projects-wrapper {
     grid-column: 1 / -1;
@@ -643,31 +630,12 @@ h2.project-title {
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
 }
-h2.project-title span {
+/*h2.project-title span {
     padding: 1px;
-    border-bottom: 2px solid rgb(32, 5, 70);
+    border-bottom: 2px solid rgb(32, 5, 70);*/
 }
-.project-container .projects-wrapper .project a {
-    color: rgb(32, 5, 70);
-    padding: 10px;
-    text-decoration: none;
-}
-.view-all {
-    text-align: center;
-    margin-top: 17px;
-    align-self: center;
-    justify-self: center;
-    border-radius: 5px;
-    color: white;
-    padding: 10px;
-    transition: .5s;
-    text-decoration: none;
-    width: 65%;
-    background-color: rgb(32, 5, 70);
-}
-.view-all:hover {
-    background-color: rgba(32, 5, 70, 0.6);
-}
+
+
 
 /*Custom scrollbar*/
 
@@ -678,81 +646,13 @@ h2.project-title span {
     background-color: white;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #2e0854;
+    background-color: black;
     border-radius: 5px;
 }
 
 ::-moz-scrollbar-thumb {
-    background-color: #2e0854;
+    background-color: black;
     border-radius: 5px;
-}
-/*animation styles*/
-
-@keyframes animate {
-    0% {
-        background: transparent;
-    }
-    100% {
-        background: rgba(32, 5, 70, .17);
-    }
-}
-div.square {
-    height: 93.5%;
-    width: 80%;
-    border-radius: 50%;
-    position: absolute;
-    top: 50px;
-    left: -40%;
-    z-index: -99;
-    animation-name: animate;
-    animation-duration: 2s;
-    animation-timing-function: ease;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-delay: 4s;
-
-}
-@keyframes load {
-    0% {
-        background: rgb(227, 224, 231);
-        font-size: 15px;
-    }
-    20% {
-        background: rgb(227, 224, 231);
-        font-size: 30px;
-        color: rgb(32, 5, 70);
-    }
-    40% {
-        font-size: 15px;
-    }
-    100% {
-        color: rgba(0, 0, 0, 0);
-        font-size: 0px;
-        left: -100%;
-    }
-}
-
-div.cover {
-    position: fixed;
-    top: 0px;
-    bottom: 0px;
-    background: rgb(227, 224, 231);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(32, 5, 70);
-    transition: ease-in-out, .3s;
-    font-family: "kanit", Arial;
-    font-weight: 900;
-    font-size: 15px;
-    height: 100%;
-    width: 100%;
-    z-index: 99999;
-    animation-name: load;
-    animation-duration: 11.5s;
-    animation-timing-function: ease;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
 #pro-image {
     width: 100%;
@@ -763,29 +663,67 @@ div.cover {
 div.footer {
     display: flex;
     padding-top: 25px;
-    text-align: center;
     padding-bottom: 25px;
-    flex-direction: column;
-    background-color: rgba(32, 5, 70, 0.3);
+    flex-direction: row;
+    background-color: black;
 
 }
 div.footer label {
     text-align: center;
     font-size: 12px;
+    color: white;
+    font-style: "poppins"
 }
 
 div.footer div.social a {
     font-size: 25px;
 }
 div.footer div.social a i {
-    color: rgb(32, 5, 70);
+    color: white;
     margin: 3px 3px 34px;
 
+}
+div.foot-menu {
+    width: 50%;
+    padding-right: 5%;
+    text-align: right;
+}
+div.foot-menu li a {
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    font-style: "poppins"
+}
+div.foot-menu li {
+    padding-bottom: 10px;
+}
+div.footer div.social {
+    padding-left: 5%;
 }
 nav {
     display: none;
 }
-
+#pro-title {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+}
+a.view-all {
+    text-align: center;
+    margin-top: 17px;
+    align-self: center;
+    justify-self: center;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    transition: .5s;
+    text-decoration: none;
+    width: 65%;
+    background-color: black;
+}
+a.view-all:hover {
+    background-color: rgba(32, 5, 70, 0.6);
+}
 /*Media queries start*/
 @media only screen and (max-width: 770px) {
     ::-webkit-scrollbar, ::-moz-scrollbar {
@@ -816,7 +754,7 @@ nav {
     }
     div.nav ul li a {
         text-decoration: none;
-        color: rgb(32, 5, 70);
+        color: white;
         font-weight: 700;
         padding: 3px;
         transition: .4s;
@@ -830,7 +768,7 @@ nav {
         }
     }
     div.nav ul li i {
-        color: rgb(32, 5, 70);
+        color: white;
         font-weight: 700;
         padding: 3px;
         cursor: pointer;
@@ -866,7 +804,7 @@ nav {
                 font-size: 65px;
             }
             div.nav ul li i {
-                color: rgb(32, 5, 70);
+                color: white;
                 font-weight: 700;
                 padding: 3px;
                 cursor: pointer;
@@ -912,7 +850,7 @@ nav {
         grid-template-columns: repeat(1, 1fr);
         align-items: start;
 /*        margin-top: 10%;*/
-        background-color:  rgb(250, 243, 252);
+        background-color:  white;
         padding: 6%;  
     }
   
@@ -924,28 +862,23 @@ nav {
     }
     h2.about-title {
         grid-column: 1 / -1;
-        color: rgb(32, 5, 70);
+        color: black;
         font-weight: 900;
-        font-family: "ubuntu";
+        font-family: "poppins";
         font-size: 36px;
-        text-align: left;
-        text-decoration: underline;
-    }
-    h2.about-title span {
-        padding: 1px;
-        border-bottom: 2px solid rgb(32, 5, 70);
+        text-align: center;
+        /* text-decoration: underline; */
     }
 
     .skills-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         align-items: start;
-        margin: 4px;
+        margin: 0px;
         margin-top: 10%;
-        background-color:  rgb(250, 243, 252);
+        background-color:  rgba(0,0,0.9);
         padding: 6%;
         box-shadow: 0px 0px 1px 1px rgba(124, 118, 118, 0.247);
-        border-radius: 10px;   
     }
     .skill-image {
         width: 100px;
@@ -962,16 +895,15 @@ nav {
         border-radius: 5px;
         padding: 10px;
         margin: 10px;
-        box-shadow: 0px 0px 2px 2px rgba(32, 5, 70, .5);
+        background-color: rgba(255,255,255,.04);
     }
     h2.skill-heading {
         grid-column: 1 / -1;
-        color: rgb(32, 5, 70);
+        color: white;
         font-weight: 900;
-        font-family: "ubuntu";
+        font-family: "poppins";
         font-size: 36px;
         text-align: left;
-        text-decoration: underline;
     }
     .skills-wrapper {
         grid-column: 1 / -1;
@@ -979,11 +911,7 @@ nav {
         grid-template-columns: repeat(3, 1fr);
         justify-content: center;
     }
-    h2.skill-heading span {
-        padding: 1px;
-        border-bottom: 2px solid rgb(32, 5, 70);
-
-    }
+    
     .project-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -993,9 +921,7 @@ nav {
         margin: 4px;
         text-align: center;
         margin-top: 10%;
-        background-color:  rgb(250, 243, 252);
         padding: 6%;
-        box-shadow: 0px 0px 1px 1px rgba(124, 118, 118, 0.247);
         border-radius: 10px;   
     }
     .project-image {
@@ -1013,19 +939,13 @@ nav {
         border-radius: 5px;
         padding: 10px;
         margin: 10px;
-        border: 1px solid rgb(32, 5, 70);
     }
-    .project:hover {
-        box-shadow: 0px 0px 2px 2px rgba(32, 5, 70, .5);
-    }
+   
     h2.project-title {
         grid-column: 1 / -1;
-        color: rgb(32, 5, 70);
         font-weight: 900;
-        font-family: "ubuntu";
         font-size: 40x;
         text-align: left;
-        text-decoration: underline;
     }
     .projects-wrapper {
         grid-column: 1 / -1;
@@ -1033,12 +953,8 @@ nav {
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
     }
-    h2.project-title span {
-        padding: 1px;
-        border-bottom: 2px solid rgb(32, 5, 70);
-    }
     .project-container .projects-wrapper .project a {
-        color: rgb(32, 5, 70);
+        color: black;
         padding: 10px;
         text-decoration: none;
     }
@@ -1052,7 +968,7 @@ nav {
         padding: 10px;
         text-decoration: none;
         width: 35%;
-        background-color: rgb(32, 5, 70);
+        /* background-color: rgb(32, 5, 70); */
     }
     .feedback-container p {
         font-size: 17px;
@@ -1083,8 +999,8 @@ nav {
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin-top: 10%;
-        background-color:  rgb(250, 243, 252);
+        margin-top: 3%;
+        /* background-color:  rgb(250, 243, 252); */
         padding: 6%;
     }
     .contact-wrapper {
@@ -1110,10 +1026,10 @@ nav {
         margin: -20px;
         padding: 0px;
         font-size: 19px;
-        color: rgb(32, 5, 70);;
+        /* color: rgb(32, 5, 70); */;
     }
     .contact-social a i {
-        color: rgb(32, 5, 70);
+        /* color: rgb(32, 5, 70); */
         font-size: 30px;
     }
     .contact-social a {
@@ -1121,39 +1037,39 @@ nav {
         display: flex;
         width: 35%;
         text-decoration: none;
-        color: rgb(32, 5, 70);
+        /* color: rgb(32, 5, 70); */
     }
     h2.contact {
         grid-column: 1 / -1;
-        color: rgb(32, 5, 70);
+        /* color: rgb(32, 5, 70); */
         font-weight: 900;
-        font-family: "ubuntu";
+        /* font-family: "ubuntu"; */
         font-size: 40px;
-        text-align: left;
-        text-decoration: underline;
+
     }
     .contact-info p {
-        color: rgb(32, 5, 70);
+        /* color: rgb(32, 5, 70); */
         font-size: 18px;
     }
     .contact-info p i {
         margin-right: 10px;
-        color: rgb(32, 5, 70);
+        /* color: rgb(32, 5, 70); */
         font-size: 30px;
     }
-    h2.contact span {
-        padding: 1px;
-        border-bottom: 2px solid rgb(32, 5, 70);
-    }
+    
     .contact-social a label {
         display: flex;
         margin-left: 10px;
         cursor: pointer;
-        color: rgb(32, 5, 70);
+        /* color: rgb(32, 5, 70); */
     }
-    div.footer label {
+    div.footer {
+     display: grid;
+     grid-template-columns: 3fr 1fr;
+    }
+    /* div.footer label {
         text-align: center;
         font-size: 17px;
-    }
+    } */
 
 }
