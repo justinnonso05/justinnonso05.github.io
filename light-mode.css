@@ -903,7 +903,6 @@ a.view-all:hover {
         font-weight: 900;
         font-family: "poppins";
         font-size: 36px;
-        text-align: left;
     }
     .skills-wrapper {
         grid-column: 1 / -1;
@@ -945,7 +944,6 @@ a.view-all:hover {
         grid-column: 1 / -1;
         font-weight: 900;
         font-size: 40x;
-        text-align: left;
     }
     .projects-wrapper {
         grid-column: 1 / -1;
