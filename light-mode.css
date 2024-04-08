@@ -4,7 +4,7 @@
 
 * {
     scrollbar-width: thin;
-    scrollbar-color: #2e0854 #f1f1f1;
+    scrollbar-color: #000000 #f1f1f1;
 }
 html {
     scroll-behavior: smooth;
