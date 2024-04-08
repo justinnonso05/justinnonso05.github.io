@@ -180,6 +180,9 @@ div.intro {
     justify-content: center;
     flex-direction: column;
 }
+img.illustration {
+    display: none;
+}
 div.texts {
     z-index: 2;
 }
@@ -827,6 +830,9 @@ a.view-all:hover {
     }*/
     .switch {
         right: 15px;
+    }
+    img.illustration {
+        display: block;
     }
     div.about {
         margin: 0px;
