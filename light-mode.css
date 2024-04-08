@@ -563,7 +563,7 @@ form.contact a:hover {
 .skill:hover {
     padding: 20px;
     margin: 5px;
-    transition: .5s;
+    transition: .1s;
 }
 h2.skill-heading {
     grid-column: 1 / -1;
