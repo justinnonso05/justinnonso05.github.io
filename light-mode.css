@@ -776,7 +776,7 @@ a.view-all:hover {
     }
     div.nav ul li a:hover {
         border-radius: 3px;
-        background-color: rgba(32, 5, 70, .27);
+        background-color: rgba(0,0,0,.3);
     }
 
     span.greet {
