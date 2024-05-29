@@ -786,10 +786,10 @@ a.view-all:hover {
     span.greet {
         font-size: 35px;
     }
-    div.intro {
+/*     div.intro {
         display: grid;
         grid-template-column: 3fr 2fr;
-    }
+    } */
     p.intro1 {
         margin-bottom: 5%;
         margin-top: 0px;
@@ -836,9 +836,9 @@ a.view-all:hover {
     .switch {
         right: 15px;
     }
-    img.illustration {
-        display: block;
-    }
+/*     img.illustration {
+        display: none;
+    } */
     div.about {
         margin: 0px;
         width: 100%;
