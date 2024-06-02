@@ -1083,7 +1083,7 @@ a.view-all:hover {
 
 }
 span.wave {
-    display: inline-block;
+    /*display: inline-block;*/
     animation: wave-animation 2s infinite;
     transform-origin: 70% 70%; /* Adjust this based on how you want the wave to look */
 }
