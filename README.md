@@ -1,3 +1,3 @@
 ## My portfolio website
 
-live at https://justondev.netlify.app
+live at https://justondev.vercel.app
