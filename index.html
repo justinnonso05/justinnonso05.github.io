@@ -1,195 +1,209 @@
-<!Doctype html>
-<html>
-  <head>
-    <!-- <meta property="og:title" content="Justin Chinonso"> -->
-    <meta property="og:description" content="Portfolio">
-    <meta property="og:image" content="https://justondev.netlify.app/img/juston.png">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:description" content="Justin Chinonso">
+    <meta property="og:image" content="https://justondev.netlify.app/logo.jpg">
     <meta property="og:image:alt" content="Image preview">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Justin Chinonso</title>
-    <link rel="icon" type="image/x-icon" href="img/juston.png">
-    <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="light-mode.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body class="body" id="body">
-    <div class="menu" id="menu">
-      <i class="fa fa-times" class="times" id="times"></i>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#">Support Me</a></li>
-        <li><a href="feedback.html">Feedback</a></li>
-      </ul>
+    <link rel="icon" type="image/x-icon" href="logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<header id="header">
+    <div class="logo">JC</div>
+    <div class="menu-container">
+        <div class="menu-bar"></div>
+        <div class="menu-bar middle"></div>
+        <div class="menu-bar"></div>
     </div>
-    <header id="header">
-      <label class="logo">JC.</label><i class="fa fa-bars" class="bars" id="bars" onclick="show()"></i>
-      <nav>
-        <div class="nav" id="nav">
-        <ul>  
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#">Support Me</a></li>
-          <li><a href="feedback.html">Feedback</a></li>
-        </ul>
-        </div>
-      </nav>
-    </header>
-    <style>
-        .wave {
-            display: inline-block;
-            animation: wave-animation 2s infinite;
-            transform-origin: 70% 70%; /* Adjust this based on how you want the wave to look */
-        }
-
-        @keyframes wave-animation {
-            0% { transform: rotate(0deg); }
-            10% { transform: rotate(14deg); }
-            20% { transform: rotate(-8deg); }
-            30% { transform: rotate(14deg); }
-            40% { transform: rotate(-4deg); }
-            50% { transform: rotate(10deg); }
-            60% { transform: rotate(0deg); }
-            100% { transform: rotate(0deg); }
-        }
-    </style>
-    <div class="intro" id="intro">
-      <div class="texts">
-        <a href="#intro" id="to-top"><i class="fa fa-angle-up"></i></a>
-        <p class="intro">
-          <span id="greet" class="greet"><b>Hey There <span class="wave">👋</span>, I'm<b></span><br><span class="name" id="name">Justin Chinonso</span>
-        </p>
-        <p class="intro1"><span>Tech Enthusiast<br>Aspiring Software Developer<br>Computer science Student</span>
-        </p>
-        <a href="#myprojects" id="projects">View my projects <i class="fa fa-arrow-down"></i></a>
-      </div>
-<!--       <div><img class="illustration" src="img/image.png" alt="illustration"></div> -->
-    </div>
-    
-    <div class="about-container" id="about">
-      <h2 class="about-title"><span>About me</span></h2>
-      <div class="about-wrapper">
-        <p class="about">
-          I'm an aspiring software developer and computer science student with a passion for creating innovative solutions that solve real-world problems.<br><br> I'm fascinated by the ever-evolving landscape of technology and enjoy staying up-to-date with the latest trends and developments in the field. As an aspiring developer, I'm constantly exploring new programming languages and tools to improve my skills and build robust and scalable applications.<br><br> My experience in software development has taught me the value of teamwork, communication, and attention to detail, which I believe are essential to delivering successful projects.<br>
-        </p>
-        <img class="me" src="img/image1.jpg" alt="my picture">
-      </div> 
-    </div>
-     
-    <div class="skills-container">
-      <h2 class="skill-heading"><span>My skills / Technologies</span></h2>
-      <div class="skills-wrapper">
-        <div class="skill">
-          <img class = "skill-image" src="img/html.png">
-          <label>HTML</label>
-        </div>
-        <div class="skill">
-          <img class = "skill-image" src="img/css.png">
-          <label>CSS</label>
-        </div>
-        <div class="skill">
-          <img class = "skill-image" src="img/Javascript.png">
-          <label>JAVASCRIPT</label>
-        </div>
-        <div class="skill">
-          <img class = "skill-image" src="img/Python.png">
-          <label>PYTHON</label>
-        </div>
-        <div class="skill">
-          <img class = "skill-image" src="img/django.png"><br>
-          <label>Django</label>
-        </div>
-        <div class="skill">
-          <img class = "skill-image" id="graphics" src="img/graphics.png">
-          <label>GRAPHICS DESIGN</label>
-        </div>
-      </div>
-    </div>
-    
-    <div class="project-container" id="myprojects">
-      <h2 class="project-title"><span>My Projects</span></h2>
-      <div class="projects-wrapper">
-        <div class="project">
-          <h3><a id="pro-title" href="project.html">Secure Key</a></h3>
-          <a href="project.html#securekey"><img class = "project-image" src="img/secure.png"></a><br>
-          <label>Password manager<br>Provides functions of storing your passwords securely.</label>
-          <label>Made with Python(Tkinter)</label>
-        </div>
-        <div class="project">
-          <h3><a id="pro-title" href="project.html">Tic tac toe</a></h3>
-          <a href="project.html#tictactoe"><img class = "project-image" src="img/tictactoe.PNG"></a><br>
-          <label>Tic Tac Toe Game. <br>With single and multiplayer modes</label>
-          <label>Made with Python(Tkinter)</label>
-        </div>
-        <div class="project">
-          <h3><a id="pro-title" href="https://justinnonso05.pythonanywhere.com" target="_blank">ToDo list web application</a></h3>
-          <a href="https://justinnonso05.pythonanywhere.com" target="_blank"><img id="pro-image" class = "project-image" src="img/Todo_1.PNG"></a><br>
-          <label>Todo list Application<br>Manage your tasks with Todo list apllication</label>
-          <label>Made with Python(Django)</label>
-        </div>
-        <div class="project">
-          <h3><a id="pro-title" href="https://justondev.netlify.app">Personal Website</a></h3>
-          <a href="https://justondev.netlify.app" target="_blank"><img id="pro-image" class = "project-image" src="img/portfolio.PNG"></a><br>
-          <label>My Portfolio Website</label>
-        </div>
-        <div class="project">
-          <h3><a id="pro-title" href="#">A social media Website</a></h3>
-          <a href="#" target="_blank"><img id="pro-image" class = "project-image" src="img/codehub.PNG"></a><br>
-          <label>Coming soon</label>
-        </div>
-        <a class= "view-all" href="project.html">View Projects Archive</a>
-      </div>
-    </div>
-
-
-    <div class="contact-container">
-      <h2 class="contact" id="contact"><span>Contact</span></h2>
-      <div class="contact-wrapper" id="contact">
-        <div class="contact-info">
-          <h3>My contact details</h3>
-          <p><i class="fa fa-phone"></i>Tel - <a class="mail" href="tel:+2349034049657">+2349034049657</a>, <a class="mail" href="tel:+2349046665617">+2349046665617</a></p>
-          <p><i class="fa fa-map-marker"></i>Location - University Of Ibadan, Nigeria</p>
-          <p><i class="fa fa-envelope"></i>Email - <a class="mail" href="mailto:chinonsoali2005@gmail.com">chinonsoali2005@gmail.com</a></p>
-          <h3 class="connect">Connect with me on social</h3>
-          <div class="contact-social">
-            <a class="social" target="_blank" href="https://www.facebook.com/justinnonso05"><i class="fa fa-facebook-square"></i>  <label>Facebook</label></a>
-            <a class="social" target="_blank" href="https://www.twitter.com/justondev"><i class="fa fa-twitter-square"></i>  <label>Twitter</label></a>
-            <a class="social" target="_blank" href="https://www.instagram.com/justinnonso05"><i class="fa fa-instagram"></i>  <label>Instagram</label></a>
-            <a class="social" target="_blank" href="https://www.github.com/justinnonso05"><i class="fa fa-github"></i>
-              <label>Github</label></a>
-            <a class="social" target="_blank" href="https://www.linkedin.com/in/justin-chinonso-281914206/"><i class="fa fa-linkedin-square"></i>  <label>LinkedIn</label></a>
-          </div>
-        </div>
-        <form class="contact" method="POST" netlify name="portfolio-contact">
-          <p>Contact me by leaving a message through the form below.</p>
-          <input class="name" name ="name" id="name" type="text" placeholder="Name" required><br>
-          <input class="email" name ="email" id="email" type="email" placeholder="Email" required><br>
-          <textarea class="message" name ="message" id="message" placeholder="Your message..." cols="30" rows="7" required></textarea><br>
-          <button class="submit" type="submit">Submit</button><label class="whatsapp"><br>Or<br>Contact me on WhatsApp</label> <a target="_blank" href="https://wa.me/+2349034049657">Here</a>
-        </form>
-      </div>
-    </div>
-    <div class="footer" id="footer">
-        <div class="social">
-          <a class="social" target="_blank" href="https://www.facebook.com/justinnonso05"><i class="fa fa-facebook-square"></i></a>
-          <a class="social" target="_blank" href="https://www.twitter.com/justondev"><i class="fa fa-twitter-square"></i></a>
-
-          <a class="social" target="_blank" href="https://www.github.com/justinnonso05"><i class="fa fa-github"></i></a>
-          <a class="social" target="_blank" href="https://www.linkedin.com/in/justin-chinonso-281914206/"><i class="fa fa-linkedin-square"></i></a><br>
-          <label>Copywright © 2024</label><br>
-          <label>Made and Designed by <br>Justin Chinonso</label>
-        </div>
-        <div class="foot-menu">
-          <ul>
-            <li><a href="index.html">Home</a></li>
+    <div class="nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-          </ul>
+            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#skills">My skills</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </div>
+</header>
+<body>
+    <div class="slide-menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#skills">My skills / Tech stack</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+    <div class="content">
+        <div class="intro">
+            <div class="image" id="home">
+                <h2>HI <span class="wave">👋</span>, I'M JUSTIN CHINONSO</h2>
+                <p class="welcome">Welcome to my portfolio</p>
+                <p>Tech Enthusiast || Software Developer</p>
+                <a href="/zip/resume.pdf" class="contact" download="">Download My Resume<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="#projects" class="works">View My Projects <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <div class="about">
+                <h2 class="about element" id="about">About Me</h2>
+                <div class="about-wrapper">
+                    <img class="element" src="img/me1.png" alt="image">
+                    <div>
+                        <p class="name element">JUSTIN CHINONSO</p>
+                        <p class="element"><span>My name is <b>Justin Chinonso</b>. </span>I'm an aspiring software developer and computer science student with a passion for creating innovative solutions that solve real-world problems.<br><br> I'm fascinated by the ever-evolving landscape of technology and enjoy staying up-to-date with the latest trends and developments in the field. As an aspiring developer, I'm constantly exploring new programming languages and tools to improve my skills and build robust and scalable applications.<br><br> My experience in software development has taught me the value of teamwork, communication, and attention to detail, which I believe are essential to delivering successful projects.<br></p>
+                        <div class="connect-social-des element">
+                            <div class="icons-des">
+                                <a href="https://www.instagram.com/justinnonso05/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/justinnonso05/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.twitter.com/justondev/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/justinnonso05/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="api.whatsapp.com/send?phone=2349034049657" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="count-container element">
+            <h2 class="over">Over</h2>
+            <div class="count-container-des">
+                <div class="count-box">
+                    <div class="count" data-target="5">0</div>
+                    <p>Years of experience</p>
+                </div>
+                <div class="count-box">
+                    <div class="count" data-target="10">0</div>
+                    <p>Certifications</p>
+                </div>
+                <div class="count-box">
+                    <div class="count" data-target="50">0</div>
+                    <p>Delivered Works</p>
+                </div>
+                <div class="count-box">
+                    <div class="count" data-target="150">0</div>
+                    <p>Creative Projects</p>
+                </div> 
+            </div>
+        </div>
+        <div class="projects-con" id="projects">
+            <h2 class="projects element">Some of my projects</h2>
+            <div class="projects-wrapper">
+                <div class="project element">
+                    <img src="img/tictactoe.PNG" alt="image">
+                    <div>
+                        <h4>Tic-Tac-Toe Game</h4>
+                        <p>Tic tac toe game <b>for desktop</b> made with python and tkinter library for GUI. <br>How to use: Download the zip file below and extract the tictactoe folder from it. Run the tictactoe.exe file in the folder. For windows 10 and 11</p>
+                        <div class="project-link">
+                            <a class="repo" href="">View Github repo <i class="fa-solid fa-arrow-up-right-from-square"></i></a><br>
+                            <a href="">Download Zip <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project element">
+                    <img src="img/secure.png" alt="image">
+                    <div>
+                        <h4>SecureKey</h4>
+                        <p>A password manager <b>for desktop</b> made with python and tkinter library for GUI. <br>How to use: Download the zip file below and extract the securekey folder from it. Run the securekey.exe file in the folder. For windows 10 and 11</p>
+                        <div class="project-link">
+                            <a class="repo" href="">View Github repo <i class="fa-solid fa-arrow-up-right-from-square"></i></a><br>
+                            <a href="">Download Zip <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project element">
+                    <img src="img/Todo_1.png" alt="image">
+                    <div>
+                        <h4>Protasker</h4>
+                        <p>A Task manager web application. Sign up to add and manage your tasks</p>
+                        <div class="project-link">
+                            <a class="repo" href="">View Github repo <i class="fa-solid fa-arrow-up-right-from-square"></i></a><br>
+                            <a href="https://bit.ly/protasker" target="_blank">Visit Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project element">
+                    <img src="img/pycalc.jpg" alt="image">
+                    <div>
+                        <h4>Calculator</h4>
+                        <p>A Simple Arithmetic Calculator <b>for desktop</b> made with python and tkinter library for GUI. <br>How to use: Download the zip file below and extract the calculator folder from it. Run the calculator.exe file in the folder. For windows 10 and 11</p>
+                        <div class="project-link">
+                            <a class="repo" href="">View Github repo <i class="fa-solid fa-arrow-up-right-from-square"></i></a><br>
+                            <a href="">Download Zip <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="services">
+            <h2 class="services element" id="skills">My Skills / Tech stack</h2>
+            <div class="services-con">
+                <div class="element"><img src="img/Python.png" alt="python"><label for="">PYTHON</label></div>
+                <div class="element"><img src="img/html.png" alt="html"><label for="">HTML </label></div>
+                <div class="element"><img src="img/css.png" alt="css"><label for="">CSS </label></div>
+                <div class="element"><img src="img/Javascript.png" alt="Javascript"><label for="">JAVASCRIPT</label></div>
+                <div class="element"><img src="img/django.png" alt="Django"><label for="">DJANGO</label></div>
+                <div class="element"><img src="img/graphics.png" alt="design"><label for="">GRAPHICS DESIGN</label></div>
+            </div>
+        </div>
+        <div class="connect-social element">
+            <h2>Connect with me on socials</h2>
+            <div class="icons">
+                <a href="https://www.instagram.com/justinnonso05/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/justinnonso05/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.twitter.com/justondev/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/justinnonso05/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="api.whatsapp.com/send?phone=2349034049657" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="contact-us" id="contact">
+            <h2 class="element">Contact Me</h2>
+            <div class="contact-des">
+                <div class="connect-social element con-social-des">
+                    <h2>Connect with me on socials</h2>
+                    <div class="icons">
+                        <a href="https://www.instagram.com/justinnonso05/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/justinnonso05/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.twitter.com/justondev/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/justinnonso05/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="api.whatsapp.com/send?phone=2349034049657" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <form class="contact element" method="POST" netlify name="portfolio-contact">
+                    <p>You can contact me through the form below.</p>
+                    <input class="name" name ="name" id="name" type="text" placeholder="Name" required><br>
+                    <input class="email" name ="email" id="email" type="email" placeholder="Email" required><br>
+                    <textarea class="message" name ="message" id="message" placeholder="Your message..." cols="30" rows="7" required></textarea><br>
+                    <button class="submit" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="thanks element"><p>Thank you for visiting my site</p></div>
+        <div class="footer element">
+            <div class="footer-contact">
+                <p><i class="fa-solid fa-map-marker-alt"></i><label>Ibadan, Nigeria</label></p>
+                <p><i class="fa-solid fa-phone"></i><a href="tel:+2349034049657">+2349034049657</a></p>
+                <p><i class="fa-solid fa-envelope"></i><a href="mailto:chinonsoali2005@gmail.com">chinonsoali2005@gmail.com</a></p>
+            </div>
+            <div class="footer-des">
+                <div class="footer-message">
+                    <p>"Crafting innovative solutions with code and craetivity"</p>
+                    <h3> &copy; Justin Chinonso 2024 </h3>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/justinnonso05/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/justinnonso05/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.twitter.com/justondev/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/justinnonso05/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="api.whatsapp.com/send?phone=2349034049657" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
         </div>
     </div>
-  </body>
-  <script src="portfolio.js"></script>
+</body>
+
+<script src="script.js"></script>
 </html>
