@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     window.addEventListener('scroll', function() {
+        body.classList.remove('show-menu');
         var header = document.getElementById('header');
         if (window.scrollY > 0) {
             header.classList.add('scrolled');
