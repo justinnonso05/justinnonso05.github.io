@@ -518,7 +518,7 @@ h1,h2,h3,h4,h5
 }
 #portfolio .portfolio-thumb .portfolio-overlay
     {
-        background: rgba(212, 63, 82, 0.5); /
+        background: rgba(212, 63, 83, 0.889);
         top: 0;
         left: 0;
         right: 0;
@@ -530,7 +530,7 @@ h1,h2,h3,h4,h5
         padding-top: 60px;
         padding-right: 20px;
         padding-left: 20px;
-        backdrop-filter: blur(15px);
+        backdrop-filter: blur(50px);
         border-radius: 5px;
         box-shadow: 0px 0px 1px 1px #00000033;
         transition: all 0.4s ease-in-out;
