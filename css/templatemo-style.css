@@ -518,7 +518,7 @@ h1,h2,h3,h4,h5
 }
 #portfolio .portfolio-thumb .portfolio-overlay
     {
-        background: #D43F52;
+        background: rgba(212, 63, 82, 0.5); /
         top: 0;
         left: 0;
         right: 0;
@@ -530,8 +530,35 @@ h1,h2,h3,h4,h5
         padding-top: 60px;
         padding-right: 20px;
         padding-left: 20px;
+        backdrop-filter: blur(15px);
+        border-radius: 5px;
+        box-shadow: 0px 0px 1px 1px #00000033;
         transition: all 0.4s ease-in-out;
+        overflow-y: scroll;
     }
+
+#portfolio .portfolio-thumb .portfolio-overlay::-webkit-scrollbar {
+        width: 1px; /* Set the width of the vertical scrollbar */
+        height: 12px; /* Set the height of the horizontal scrollbar */
+}
+      
+      /* Style the scrollbar track (the background of the scrollbar) */
+#portfolio .portfolio-thumb .portfolio-overlay::-webkit-scrollbar-track {
+      background-color: white; /* White background for the track */
+}
+      
+      /* Style the scrollbar thumb (the draggable part of the scrollbar) */
+#portfolio .portfolio-thumb .portfolio-overlay::-webkit-scrollbar-thumb {
+    background-color: #333; /* Dark thumb color */
+    border-radius: 10px; /* Rounded corners for the thumb */
+    border: 3px solid white; /* Optional: border around the thumb */
+}
+    
+    /* Style the scrollbar thumb when hovered */
+#portfolio .portfolio-thumb .portfolio-overlay::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Darker thumb color on hover */
+}
+      
 #portfolio .portfolio-thumb .portfolio-overlay h5 {
     line-height: 20px;
     font-family: "poppins", Arial, Helvetica, sans-serif;
