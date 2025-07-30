@@ -765,3 +765,63 @@ footer hr
         color: #D43F52;
     }
 /* end social icon */
+/* Add to your CSS file */
+.skills-title {
+    margin-bottom: 18px;
+    font-size: 1.3em;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+.skill-item {
+    display: flex;
+    align-items: center;
+    background: #222c;
+    border-radius: 8px;
+    padding: 8px 14px;
+    box-shadow: 0 2px 8px #0002;
+    min-width: 120px;
+    margin-bottom: 8px;
+}
+.skill-icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+    filter: drop-shadow(0 0 4px #00ffe0);
+    background: transparent;
+}
+.skill-item span {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+@media (max-width: 600px) {
+    .skills-grid {
+        gap: 10px;
+    }
+    .skill-item {
+        min-width: 100px;
+        padding: 6px 8px;
+    }
+    .skill-icon {
+        width: 22px;
+        height: 22px;
+        margin-right: 7px;
+    }
+}
+
+@media (max-width: 999px) {
+    .about-container {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        width: 100% !important;
+        padding-left: 0px !important;   
+        padding-right: 0px !important;
+    }
+}

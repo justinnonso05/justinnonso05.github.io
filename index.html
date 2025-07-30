@@ -180,7 +180,7 @@
 
 		<!-- start about -->
 		<div id="about" class="section1">
-			<div class="container">
+			<div class="container about-container">
 				<div class="row about-row">
 					<div class="col-md-6 col-xs-11 wow fadeInLeft" data-wow-delay="0.9s">
 						<h2>ABOUT JUSTIN</h2>
@@ -188,26 +188,61 @@
 						<p>I'm a dedicated software developer with a focus on backend development, primarily using Python and Django to build robust, scalable applications. As a computer science student, I'm constantly expanding my skills and staying updated on industry trends. I have a strong passion for data science and machine learning, fascinated by how data can drive smarter decision-making and innovative solutions. When I'm not coding or studying, you'll likely find me immersed in video games, appreciating the creativity and technology behind them. I'm always eager to take on new challenges and grow as a developer.</p>
 					</div>
 					<div class="col-md-6 col-xs-11 wow fadeInRight" data-wow-delay="0.9s">
-						<span class="text-top">Python <small>80%</small></span>
-							<div class="progress">
-								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+						<h3 class="skills-title">Skills & Technologies</h3>
+						<div class="skills-grid">
+							<div class="skill-item">
+								<img src="images/icons/python.svg" alt="Python" class="skill-icon">
+								<span>Python</span>
 							</div>
-						<span>Django <small>70%</small></span>
-							<div class="progress">
-								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+							<div class="skill-item">
+								<img src="images/icons/django.svg" alt="Django" class="skill-icon">
+								<span>Django</span>
 							</div>
-						<span>JavaScript <small>70%</small></span>
-							<div class="progress">
-								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+							<div class="skill-item">
+								<img src="images/icons/javascript.svg" alt="JavaScript" class="skill-icon">
+								<span>JavaScript</span>
 							</div>
-						<span>HTLM5 &AMP; CSS3 <small>90%</small></span>
-							<div class="progress">
-								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+							<div class="skill-item">
+								<img src="images/icons/html5.svg" alt="HTML5" class="skill-icon">
+								<span>HTML5</span>
 							</div>
-						<span>Graphic Design <small>60%</small></span>
-							<div class="progress">
-								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+							<div class="skill-item">
+								<img src="images/icons/css.svg" alt="CSS3" class="skill-icon">
+								<span>CSS3</span>
 							</div>
+							<div class="skill-item">
+								<img src="images/icons/nodedotjs.svg" alt="Node.js" class="skill-icon">
+								<span>Node.js</span>
+							</div>
+							<div class="skill-item">
+								<img src="images/icons/express.svg" alt="Express.js" class="skill-icon">
+								<span>Express.js</span>
+							</div>
+							<div class="skill-item">
+								<img src="images/icons/fastapi.svg" alt="FastAPI" class="skill-icon">
+								<span>FastAPI</span>
+							</div>
+							<div class="skill-item">
+								<img src="images/icons/docker.svg" alt="Docker" class="skill-icon">
+								<span>Docker</span>
+							</div>
+							<div class="skill-item">
+								<img src="images/icons/git.svg" alt="Git" class="skill-icon">
+								<span>Git</span>
+							</div>
+							<div class="skill-item">
+								<img src="images/icons/postman.svg" alt="Postman" class="skill-icon">
+								<span>Postman</span>
+							</div>
+							<div class="skill-item">
+								<img src="images/icons/figma.svg" alt="Graphic Design" class="skill-icon">
+								<span>Graphic Design</span>
+							</div>
+							<div class="skill-item">
+								<img src="images/icons/postgresql.svg" alt="SQL" class="skill-icon">
+								<span>SQL</span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -232,8 +267,20 @@
 								<a href="https://github.com/justinnonso05/stacks" target="_blank" class="git"><i class="fab fa-github"></i></a>
 								<a href="https://stacks.pythonanywhere.com" target="_blank" class="view">View Site</a>
 							</div>
-							
 						</div>									
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-12 wow fadeIn con1" data-wow-delay="0.6s">
+						<div class="portfolio-con">
+							<div class="portfolio-img">
+								<img src="images/duespay.png" class="img-responsive" alt="portfolio img">
+							</div>
+							<h4 class="project-title"><b>DuesPay</b></h4>
+							<h5>DuesPay is a digital payment platform designed for student organizations to manage dues collection efficiently. It streamlines payments, tracks member contributions, and provides transparent reporting for treasurers and admins.</h5>
+							<div class="portfolio-link">
+								<a href="#" target="_blank" class="git"><i class="fab fa-github"></i></a>
+								<a href="https://duespay.app/" target="_blank" class="view">View Site</a>
+							</div>
+						</div>						
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12 col-12 wow fadeIn con1" data-wow-delay="0.6s">
 						<div class="portfolio-con">
@@ -283,20 +330,10 @@
 							<h5>URL Insights is a content summarizer tool that extracts and condenses the main ideas from any web page using just its URL. Ideal for quick research, it helps users understand online articles without reading the full content.</h5>
 							<div class="portfolio-link">
 								<a href="#" target="_blank" class="git"><i class="fab fa-github"></i></a>
-								<a href="https://justwhisp.onrender.com/" target="_blank" class="view">View Site</a>
+								<a href="https://url-insights.vercel.app/" target="_blank" class="view">View Site</a>
 							</div>
 						</div>						
 					</div>
-					<!-- <div class="col-lg-6 col-md-6 col-sm-12 col-12 wow fadeIn con1" data-wow-delay="0.6s">
-						<div class="portfolio-con">
-							<div class="portfolio-img">
-								<img src="images/stacks.png" class="img-responsive" alt="portfolio img">
-							</div>
-							<h4 class="project-title"><b>Tic-tac-toe Game (Python, Tkinter)</b></h4>
-							<h5>A classic Tic-Tac-Toe game developed, featuring both single-player and multiplayer modes...</h5>
-							<h5><a class="more" href="https://github.com/justinnonso05/tictactoe" target="_blank">View Details</a></h5>
-						</div>						
-					</div> -->
 				</div>
 			</div>
 		</div>
